@@ -23,7 +23,7 @@ const About = () => {
                 iterations of HackFest proved to be among the finest hackathons
                 in East India. Over 2000 enthusiasts signed up in the past
                 iterations of the hackathon to build and innovate. HackFest
-                believes in conceptualizing "ideas into reality" and was started
+                believes in conceptualizing &rdquo;ideas into reality&rdquo; and was started
                 as a platform to provide support to budding developers to
                 enhance their problem solving skills and work towards providing
                 groundbreaking solutions to existing day-to-day problems.
