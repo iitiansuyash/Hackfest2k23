@@ -6,12 +6,12 @@ const About = () => {
     <>
       <div className={styles.container}>
         <header>
-          <h1 className={styles.pageTitle}>About Us</h1>
+          <h1 className={styles.pageTitle}>About</h1>
         </header>
         <main>
           <article className={styles.content}>
             <section className={styles.contentDescriptor}>
-              <h2 className={styles.contentTitle}>Info</h2>
+              <h2 className={styles.contentTitle}> > Hackfest Info</h2>
             </section>
             <section className={styles.contentTextBox}>
               <p className={styles.contentText}>

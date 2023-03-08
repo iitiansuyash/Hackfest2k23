@@ -3,6 +3,7 @@
 .main {
   padding: 10rem 0;
   height: 100vh;
+  color: #fafafa;
 }
 .container{
   display: flex;

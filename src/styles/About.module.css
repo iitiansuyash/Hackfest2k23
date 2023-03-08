@@ -19,17 +19,20 @@ body {
   margin: 0 auto;
   padding: 0 6rem 6rem 6rem;
   font-family: Genos;
+  color: #fafafa;
+  background-color: #000;
 }
 
 .pageTitle {
   margin-bottom: 1rem;
-  /* font-family: "Anton", sans-serif; */
+  font-family: 'Genos';
   font-size: 6rem;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: -0.4px;
   line-height: 8rem;
   color: #fafafa;
+  
 }
 @media only screen and (max-width: 760px) {
   .pageTitle {
@@ -107,7 +110,7 @@ body {
   }
 }
 .contentText {
-  width: 400px;
+  /* width: 400px; */
     font-size: 1.25rem;
 }
 @media only screen and (max-width: 580px) {

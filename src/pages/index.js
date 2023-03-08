@@ -1,13 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import "bootstrap/dist/css/bootstrap.css";
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import About from '@/components/About'
+import Sponsors from '@/components/Sponsors'
 import { useEffect, useRef, useState } from 'react'
 import GLOBE from "vanta/dist/vanta.globe.min"
 import * as THREE from "three"
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -51,6 +54,7 @@ export default function Home() {
         </div>
       </main>
       <About/>
+      <Sponsors/>
       <Footer/>
 
     </>
