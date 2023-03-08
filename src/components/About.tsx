@@ -11,7 +11,7 @@ const About = () => {
         <main>
           <article className={styles.content}>
             <section className={styles.contentDescriptor}>
-              <h2 className={styles.contentTitle}> > Hackfest Info</h2>
+              <h2 className={styles.contentTitle}> &gt; Hackfest Info</h2>
             </section>
             <section className={styles.contentTextBox}>
               <p className={styles.contentText}>
