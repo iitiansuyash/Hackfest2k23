@@ -23,3 +23,12 @@
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 760px) {
+  .ttl {
+    font-size: 5rem;
+  }
+  .subttl {
+    font-size: 1.5rem;
+  }
+
+}

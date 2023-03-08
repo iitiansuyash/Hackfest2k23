@@ -28,7 +28,7 @@ body {
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: -0.4px;
-  line-height: 16rem;
+  line-height: 8rem;
   color: #fafafa;
 }
 @media only screen and (max-width: 760px) {
@@ -39,7 +39,7 @@ body {
 }
 @media only screen and (max-width: 580px) {
   .pageTitle {
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     font-size: 7rem;
   }
 }
@@ -113,5 +113,22 @@ body {
 @media only screen and (max-width: 580px) {
   .contentText {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        padding: 0 2rem 2rem 2rem;
+
+    }
+    .pageTitle {
+        font-size: 4rem;
+    }
+    .contentText {
+        width: 100%;
+    }
+
+  .contentTitle{
+    font-size: 2rem;
   }
 }
