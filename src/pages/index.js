@@ -6,6 +6,7 @@ import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import About from '@/components/About'
+import Events from '@/components/Events'
 import Sponsors from '@/components/Sponsors'
 import { useEffect, useRef, useState } from 'react'
 import GLOBE from "vanta/dist/vanta.globe.min"
@@ -49,11 +50,10 @@ export default function Home() {
           <h2 className={styles.subttl}>Tagline Here</h2>
           <h2 className={styles.subttl}>7th to 9th APRIL</h2>
           <h2 className={styles.subttl}>IIT ISM Dhanbad</h2>
-          {/* <p className={styles.desc}>A 36 hour hackathon</p> */}
-          {/* <hr/> */}
         </div>
       </main>
       <About/>
+      <Events/>
       <Sponsors/>
       <Footer/>
 

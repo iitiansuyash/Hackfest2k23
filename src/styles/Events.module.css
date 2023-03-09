@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos");
+
+.main {
+    /* padding: 10rem 0; */
+    margin: 0 auto;
+  padding: 0 6rem 6rem 6rem;
+    height: 60vh;
+    color: #fafafa;
+    font-family: 'Genos';
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* height: 100%; */
+    font-family: Genos;
+    padding: 0 0 0 30px;
+  }
+  .ttl {
+    font-size: 6rem;
+    /* font-weight: 600; */
+    /* margin-bottom: 1rem; */
+  }
+
+  @media only screen and (max-width: 650px) {
+    .main {
+      padding: 0 0 0 0rem;
+    }
+    .container {
+      /* padding: 0 0 0 0rem; */
+      height: 25vh;
+    }
+    .ttl {
+      font-size: 5rem;
+      padding: 0 0 30px 0;
+    }
+    
+  }
+  
