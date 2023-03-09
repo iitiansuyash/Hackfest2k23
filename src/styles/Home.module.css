@@ -5,7 +5,8 @@
   /* width: 100vh; */
   height: 100vh;
   color: #fafafa;
-  overflow-y: hidden;
+  width: 100%;
+  /* overflow-y: hidden; */
 }
 .container{
   display: flex;
