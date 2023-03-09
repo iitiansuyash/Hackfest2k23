@@ -130,7 +130,7 @@ a {
 	position: relative;
 	backdrop-filter: blur(16px) saturate(180%);
 	-webkit-backdrop-filter: blur(16px) saturate(180%);
-	background-color: rgba(32, 3, 30, 0.529);
+	background-color: #0b0b0bf9;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	border: 1px solid #ffffff20;
@@ -448,9 +448,18 @@ a {
 /* NAVBAR */
 
 /*==========================================*/
-  
+.nav{
+	/* display: flex; */
+	/* flex-direction: row; */
+	margin: 2rem;
+}
+@media only screen and (max-width: 600px) {
+	.nav{
+		margin: 0;
+	}
+}
 .nav > .nav-header {
-	display: inline;
+	display: inline-block;
   }
   
   .nav > .nav-header > .nav-title {
@@ -491,11 +500,18 @@ a {
 	color: #ffffff;
   }
   
-  .nav > .nav-links > a:hover {
+  /* .nav > .nav-links > a:hover {
 	background-color: rgba(0, 0, 0, 0.812);
 	width: 5rem;
 	border-radius: 15px;
+  } */
+  /* @media only screen and (max-width: 600px){
+	.nav > .nav-links > a:hover{
+		background-color: none;
+		width: 0rem;
+		border-radius: 15px;
   }
+} */
   
   .nav > #nav-check {
 	display: none;
@@ -560,7 +576,7 @@ a {
 	}
 	.nav > .nav-links > a {
 	  display: block;
-	  /* width: 100%; */
+	  width: 75%;
 	}
 	.nav > #nav-check:not(:checked) ~ .nav-links {
 	  height: 0px;

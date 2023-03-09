@@ -20,19 +20,22 @@ const Navbar = () => {
           </div>
 
           <div className="nav-links">
-            <Link href="#about">
+          <Link href="/" passHref={true} legacyBehavior={true}>
+              <a>Home</a>
+            </Link>
+            <Link href="#about" passHref={true} legacyBehavior={true}>
               <a>About</a>
             </Link>
-            <Link href="/team">
+            <Link href="/team" passHref={true} legacyBehavior={true}>
               <a>Team</a>
             </Link>
-            <Link href="#sponsors">
+            <Link href="#sponsors" passHref={true} legacyBehavior={true}>
               <a>Sponsors</a>
             </Link>
-            <Link href="#contact">
+            <Link href="#contact"passHref={true} legacyBehavior={true}>
               <a>Contact</a>
             </Link>
-            <Link href="https://www.linkedin.com/in/hackfest-iit-ism-dhanbad-574021159">
+            <Link href="https://www.linkedin.com/in/hackfest-iit-ism-dhanbad-574021159" passHref={true} legacyBehavior={true}>
               <a target="_blank">LinkedIn</a>
             </Link>
           </div>
