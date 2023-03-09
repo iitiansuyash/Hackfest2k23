@@ -6,7 +6,8 @@
   padding: 0 6rem 6rem 6rem;
     /* width: 100vh; */
     height: 60vh;
-    
+    overflow-y: hidden;
+
     color: #fafafa;
     font-family: 'Genos';
   }
