@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import TeamMemberInput from "./TeamMemberInput";
 const Login = () => {
-  const REACT_APP_BACKEND_URL = "";
+  const REACT_APP_BACKEND_URL = "localhost:8000/register";
   const [data, setData] = useState({
     team_name: "",
     team_captain: "",
