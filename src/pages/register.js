@@ -1,9 +1,9 @@
 import React from "react";
-import Login from "../components/Login/index";
+import Register from "../components/Register/index";
 const login = () => {
   return (
     <div>
-      <Login />
+      <Register />
     </div>
   );
 };
