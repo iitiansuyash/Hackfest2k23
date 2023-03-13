@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import TeamMemberInput from "./TeamMemberInput";
+// import TeamMemberInput from "./TeamMemberInput";
 // import { useNavigate } from "react-router-dom";
 const Login = () => {
   // const navigate = useNavigate();
-  const REACT_APP_BACKEND_URL = "http://localhost:8000/register";
+  const REACT_APP_BACKEND_URL = "http://localhost:8000/login";
   const [data, setData] = useState({
     team_name: "",
     team_captain: "",
@@ -65,40 +65,7 @@ const Login = () => {
             handleChange(e);
           }}
         />
-        <input
-          name="team_captain"
-          type="text"
-          placeholder="team captain"
-          onChange={(e) => {
-            handleChange(e);
-          }}
-        />
-        <input
-          name="team_captain_email"
-          type="email"
-          placeholder="team captain email"
-          onChange={(e) => {
-            handleChange(e);
-          }}
-        />
-        <input
-          name="team_captain_phone"
-          type="text"
-          placeholder="team captain phone number"
-          onChange={(e) => {
-            handleChange(e);
-          }}
-        />
-        <input
-          name="college"
-          type="text"
-          placeholder="college"
-          onChange={(e) => {
-            handleChange(e);
-          }}
-        />
-        <p>Add your crewmates</p>
-        <TeamMemberInput data={data} setData={setData} />
+
         <button
           onClick={(e) => {
             e.preventDefault();
