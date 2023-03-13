@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import TeamMemberInput from "./TeamMemberInput";
 const Login = () => {
-  const REACT_APP_BACKEND_URL = "localhost:8000/register";
+  const REACT_APP_BACKEND_URL = "http://localhost:8000/register";
   const [data, setData] = useState({
     team_name: "",
     team_captain: "",
@@ -20,7 +20,7 @@ const Login = () => {
     console.log(data);
     setData({ ...data, id: "123" });
     const res = await axios.post(REACT_APP_BACKEND_URL, data);
-    // console.log(res);
+    console.log(res);
     // try {
     //   const { dat } = await axios.post(REACT_APP_BACKEND_URL, data);
     // } catch (error) {
