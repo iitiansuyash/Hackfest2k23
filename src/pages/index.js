@@ -7,10 +7,15 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import About from '@/components/About'
 import Events from '@/components/Events'
+import Faq from '@/components/Faq';
+import Timeline from '@/components/Timeline'
 import Sponsors from '@/components/Sponsors'
+import Glimpse from '@/components/Glimpse'
+import Testimonials from '@/components/Testimonials'
 import { useEffect, useRef, useState } from 'react'
 import GLOBE from "vanta/dist/vanta.globe.min"
 import * as THREE from "three"
+import FAQ from '@/components/Faq';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -53,8 +58,12 @@ export default function Home() {
         </div>
       </main>
       <About/>
+      <Timeline/>
+      <Glimpse/>
       <Events/>
+      <Testimonials/>
       <Sponsors/>
+      <Faq/>
       <Footer/>
 
     </>
