@@ -1,5 +1,5 @@
 import React from "react";
-const Announcement = ({ text }) => {
+const Announcements = ({ text }) => {
   return <div style={{ margin: "20px" }}>{text}</div>;
 };
-export default Announcement;
+export default Announcements;

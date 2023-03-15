@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import TeamCard from "../components/TeamCard";
 import styles from "../styles/Team.module.css";
 const Team = () => {
-  const BACKEND_URL = "http://localhost:8000/organizing";
+  const BACKEND_URL = "https://hackfest-backend-3y92.onrender.com/organizing";
   const [users, setUsers] = useState([]);
   useEffect(() => {
     const fun = async () => {
