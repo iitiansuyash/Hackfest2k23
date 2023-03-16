@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Genos");
+/* @import url("https://fonts.googleapis.com/css2?family=Genos"); */
 /* * {
   margin: 0;
   padding: 0;
@@ -11,12 +11,12 @@ body {
   color: #fafafa;
 } */
 
-#main {
+/* #main {
   width: 100%;
   min-height: 94vh;
   padding: 40px;
   display: flex;
-  /* flex-direction: column; */
+ 
   flex-wrap: wrap;
   justify-content: center;
   gap: 65px 75px;
@@ -64,4 +64,91 @@ body {
   justify-content: center;
   text-align: center;
   font-family: "Genos";
+} */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Genos");
+/* * {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} */
+/* 
+body {
+  background: #27276c;
+  font-family: "Genos";
+  color: #fafafa;
+} */
+
+#main {
+  width: 100%;
+  min-height: 94vh;
+  padding: 40px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 65px 75px;
+  background-color: rgb(0, 0, 0);
+}
+#main .card {
+  width: 300px;
+  height: 320px;
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+  padding: 12px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s 0.1s;
+  border-radius: 18px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+#main .card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+#main .card .image {
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover !important;
+  border-radius: 100%;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#main .card .title {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #fafafa;
+}
+#main .card .text {
+  font-size: 12px;
+  color: #fafafa;
+}
+
+.ttl {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  justify-content: center;
+  text-align: center;
+  font-family: "Genos";
+}
+@media only screen and (max-width: 980px) {
+  #main .card {
+    width: 320px;
+    height: 300px;
+  }
+  #main .card .title {
+    font-size: 1.2rem;
+  }
 }

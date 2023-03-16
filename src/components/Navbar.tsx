@@ -38,6 +38,16 @@ const Navbar = () => {
             <Link href="https://www.linkedin.com/in/hackfest-iit-ism-dhanbad-574021159" passHref={true} legacyBehavior={true}>
               <a target="_blank">LinkedIn</a>
             </Link>
+            <Link
+              href="https://www.linkedin.com/in/hackfest-iit-ism-dhanbad-574021159"
+              passHref={true}
+              legacyBehavior={true}
+            >
+              <a ><img
+                style={{ filter: "invert(100%)", marginTop:'-10px'}}
+                src="https://img.icons8.com/material-outlined/24/000000/contract-job.png"
+              /></a>
+            </Link>
           </div>
         </div>
       </section>

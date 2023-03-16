@@ -77,12 +77,8 @@ const Team = () => {
   return (
     <>
       <Navbar />
-      <br />
-      <br />
-      <br />
-      <br />
 
-      <h1 className={styles.ttl}>Our Team</h1>
+      {/* <h2 className="section-header">Advisors</h2> */}
       <main id={styles.main}>
         {users.map((user, i) => (
           <TeamCard user={user} key={i} />
