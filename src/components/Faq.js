@@ -35,7 +35,7 @@ export default class Faq extends React.Component {
 			// <ScrollableAnchor id="faq">
 				<section className="faq">
 					<Container className="my-5">
-						<h2 className="section-header">Frequently Asked Questions</h2>
+						<h2 className="section-header">FAQ&rsquo;s</h2>
 						{/* <h2 className="section-header">Past Sponsors</h2> */}
 						<Row className="align-items-centre">
 							<Col md={6}>

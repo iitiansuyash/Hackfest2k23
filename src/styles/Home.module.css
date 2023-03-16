@@ -8,13 +8,14 @@
   /* width: 120% */
   overflow-y: hidden;
   overflow-x: hidden;
+  /* font-family: 'Genos'; */
 }
 .container{
   display: flex;
   flex-direction: column;
   justify-content: left;
   height: 100%;
-  font-family: Genos;
+  font-family: 'Genos';
   padding: 0 0 0 90px;
 }
 .ttl {
@@ -34,6 +35,9 @@
   }
   .subttl {
     font-size: 1.5rem;
+  }
+  .container{
+    padding: 0 0 0 30px;
   }
 
 }

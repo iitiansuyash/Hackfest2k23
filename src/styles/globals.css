@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Genos');
 
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -40,9 +40,9 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -73,7 +73,7 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -321,7 +321,7 @@ a {
 @media only screen and (max-width: 600px) {
   .section-header {
     font-size: 4.5rem;
-    padding: 0 0 0 2remy;
+    padding: 0 0 0 2rem;
   }
 }
 .sponsors h2 {
@@ -472,12 +472,19 @@ a {
 
 .nav > .nav-links {
   display: flex;
-  /* float: right; */
-  /*   color: #000; */
-  padding: 0 0 0 32rem;
-  /* gap: 6px; */
-  /* space-between: 3px; */
+  padding: 0 0 0 30rem;
   font-size: 18px;
+  /* padding: 10px 10px 10px 10px; */
+}
+@media only screen and (max-width: 960px) {
+	.nav > .nav-header > .nav-title{
+		font-size: 18px;
+		padding: .25rem 0 0 0;
+	}
+  .nav > .nav-links {
+	padding: 0 0 0 16rem;
+	/* font-size: 10px */
+  }
 }
 
 .nav > .nav-links > a {
@@ -489,8 +496,8 @@ a {
   /* padding: 13px 10px 13px 10px; */
   /* padding-left:30px; */
   /* padding-right:30px; */
-  margin-left: 30px;
-  margin-right: 30px;
+  /* margin-left: 30px; */
+  margin-right: 20px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -533,7 +540,7 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -571,14 +578,15 @@ a {
   }
   .nav > .nav-links > a {
     display: block;
-    width: 75%;
+    /* width: 75%; */
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: auto;
     overflow-y: auto;
+	border-radius: 25px;
   }
 }
 
@@ -688,13 +696,13 @@ a {
 
 @media screen and (max-width: 980px) {
 	.glimpses-carousel {
-		height: 630px;
+		height: 750px;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.glimpses-carousel {
-		height: 500px;
+		height: 700px;
 	}
 }
 
