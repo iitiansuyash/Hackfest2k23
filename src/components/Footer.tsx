@@ -7,7 +7,7 @@ const Footer = () => {
     return ( 
     <>
         {/* <ScrollableAnchor id="contact"> */}
-        <div className='container-color'>
+        <div className='container-color' id='contact'>
             <footer className="main-footer">
                 <div className="container">
                     <div className="footer-content">

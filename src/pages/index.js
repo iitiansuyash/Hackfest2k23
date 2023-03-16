@@ -10,7 +10,7 @@ import Events from '@/components/Events'
 import Faq from '@/components/Faq';
 import Timeline from '@/components/Timeline'
 import Sponsors from '@/components/Sponsors'
-import Glimpse from '@/components/Glimpse'
+import Glimpse from '@/components/Carousel'
 import Testimonials from '@/components/Testimonials'
 import { useEffect, useRef, useState } from 'react'
 import GLOBE from "vanta/dist/vanta.globe.min"
@@ -58,12 +58,12 @@ export default function Home() {
         </div>
       </main>
       <About/>
-      <Timeline/>
+      {/* <Timeline/> */}
       <Glimpse/>
       <Events/>
-      <Testimonials/>
-      <Sponsors/>
+      {/* <Testimonials/> */}
       <Faq/>
+      <Sponsors/>
       <Footer/>
 
     </>
