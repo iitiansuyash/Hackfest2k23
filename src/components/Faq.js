@@ -41,9 +41,9 @@ export default class Faq extends React.Component {
 							<Col md={6}>
 								<div className="faq-content">
 									<Question id="q1" question="What is hackfest?">
-										Hackfest is an event in which numerous tech lovers divided into teams develop a product which is a hardware or software solution to real world problems or industrial problems. Hundreds of programmers get together to build something from scratch, be it a website, an app, or some other product of their imagination. There will be exciting prizes and opportunities to work with the representatives from various companies.
+										Hackfest is an event in which numerous tech lovers divided into teams develop a product which is a hardware or software solution to real world problems or industrial problems. Hundreds of programmers get together to build something from scratch, be it a website, an app, or some other product of their imagination.
 									</Question>
-									<Question id="q2" question="I don't have an idea, what should I do?">
+									<Question id="q2" question="I don&rsquo;t have an idea, what should I do?">
 										Don’t worry! We will walk you through how to generate great ideas in the beginning of the HackFest. Together as a team you can work on problem statements of the sponsoring companies.
 									</Question>
 									<Question id="q3" question="Who can participate?">
@@ -71,7 +71,7 @@ export default class Faq extends React.Component {
 										Participants have to register for the hackathon online. Teams of 3-5  members can participate in the Hackathon.
 									</Question>
 									<Question id="q6" question="I have never been to a hackathon, what should I do?">
-										That's completely fine! You'll have plenty of opportunities to pick the brains of talented students around you. Furthermore, 36 hours is plenty of time to learn something new.
+										Thats completely fine! You&rsquo;ll have plenty of opportunities to pick the brains of talented students around you. Furthermore, 36 hours is plenty of time to learn something new.
 									</Question>
 									<Question id="q7" question="What  technical requirements do I need?">
 										You will need a laptop with proper internet connectivity.
