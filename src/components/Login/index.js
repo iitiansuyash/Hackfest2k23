@@ -4,7 +4,7 @@ import axios from "axios";
 // import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../contexts/user.context";
 import Navbar from '../Navbar'
-
+import Cookies from "js-cookie";
 const Login = () => {
   // const navigate = useNavigate();
   const {setCurrentUser} = useContext(UserContext);
@@ -32,6 +32,7 @@ const Login = () => {
       console.log(res.data.message)
       setCurrentUser(res.data.message);
       console.log(res);
+      Cookies.set("data",res.data.message);
       // setTimeout(() => {
       //   navigate("/profile");
       // }, 2000);
