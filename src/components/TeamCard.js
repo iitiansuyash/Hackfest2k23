@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../styles/Team.module.css";
 const TeamCard = ({ user }) => {
   return (
-    <div>
+    <div> 
       <div className={styles.card}>
         <img
           className={styles.image}
