@@ -79,6 +79,11 @@ const Team = () => {
       <Navbar />
 
       {/* <h2 className="section-header">Advisors</h2> */}
+      <br/><br/><br/><br/>
+      <div className={styles.container}>
+          <h1 className={styles.ttl}>Advisors</h1>
+            {/* <p style={{textAlign: "center", fontSize: "2rem"}}>Coming Soon...</p> */}
+     </div>
       <main id={styles.main}>
         {users.map((user, i) => (
           <TeamCard user={user} key={i} />
