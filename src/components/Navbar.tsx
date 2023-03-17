@@ -1,8 +1,20 @@
 import styles from '../styles/Navbar.module.css'
 import $ from 'jquery'
 import Link from 'next/link'
+import { UserContext } from '@/contexts/user.context';
+import {useContext, useEffect} from 'react';
+import axios from 'axios';
 
 const Navbar = () => {
+  const {currentUser} = useContext(UserContext);
+  // useEffect(()=>{
+  //   const fun = async()=>{
+  //     const data =await axios.get('')
+  //   }
+  //   fun()
+
+
+  // },[])
   return (
     <>
       <section className={styles.navbar}>
@@ -38,8 +50,9 @@ const Navbar = () => {
             <Link href="https://www.linkedin.com/in/hackfest-iit-ism-dhanbad-574021159" passHref={true} legacyBehavior={true}>
               <a target="_blank">LinkedIn</a>
             </Link>
-            <Link
-              href="https://www.linkedin.com/in/hackfest-iit-ism-dhanbad-574021159"
+            {currentUser?(
+              <Link
+              href="/profile"
               passHref={true}
               legacyBehavior={true}
             >
@@ -48,6 +61,7 @@ const Navbar = () => {
                 src="https://img.icons8.com/material-outlined/24/000000/contract-job.png"
               /></a>
             </Link>
+            ):<div></div>}
           </div>
         </div>
       </section>

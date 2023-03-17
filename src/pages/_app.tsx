@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import UserProvider from '../contexts/user.context'
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -18,5 +19,5 @@ export default function App({ Component, pageProps }: AppProps) {
       }
     };
   }, [])
-  return <Component {...pageProps} />
+  return <UserProvider><Component {...pageProps} /></UserProvider>
 }
