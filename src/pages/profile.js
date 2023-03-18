@@ -17,9 +17,15 @@ const profile = () => {
   // console.log(window)
   // console.log(typeof(user));
   useEffect(() => {
-    setUser(JSON.parse(localStorage.getItem('data')))
-    console.log(user)
-  }, [])
+    const data = localStorage.getItem('data');
+    if (data) {
+      try {
+        setUser(JSON.parse(data));
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  }, []);
   // console.log(user?.team_name);
   return (
     <>
