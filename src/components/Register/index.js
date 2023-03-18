@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { useRouter } from 'next/router'
 import axios from 'axios'
 import TeamMemberInput from './TeamMemberInput'
+import { UserContext } from '../../contexts/user.context'
+// import { useRouter } from 'next/router'
 // import { useNavigate } from "react-router-dom";
 const Login = () => {
   const router = useRouter()
+  const { setCurrentUser } = useContext(UserContext)
   // const navigate = useNavigate();
   const REACT_APP_BACKEND_URL = 'http://localhost:8000/register'
   const [data, setData] = useState({
@@ -27,14 +30,16 @@ const Login = () => {
     try {
       const res = await axios.post(REACT_APP_BACKEND_URL, data)
       alert(res.data.message)
-      // api se data lekar localstorage me save krna after json stringify
-      
-      console.log(res)
+      console.log(res.data.data)
+      setCurrentUser(res.data._doc)
+      console.log(res.data._doc)
+      localStorage.setItem('data', JSON.stringify(res.data._doc))
+      console.log(JSON.parse(localStorage.getItem('data')))
       setTimeout(() => {
-        router.push('/profile');
-      }, 2000);
+        router.push('/profile')
+      }, 2000)
     } catch (err) {
-      alert(err.response.data.message)
+      alert(err)
     }
 
     // if (res.status == "200") {

@@ -29,14 +29,14 @@ const profile = () => {
   // console.log(user?.team_name);
   return (
     <>
-      {/* <Navbar/> */}
+      <Navbar/>
 
-      <p>{user?.team_name}</p>
-      <div>
+      {/* <p style={{ color: 'white' }}>{user?.team_name}</p> */}
+      <div style={{marginTop:'3rem'}}>
         <div style={{ color: 'white' }}>user profile</div>
-        <div>Team Name: {user?.team_name}</div>
-        <div>College:{user?.college}</div>
-        <div>Team captain:{user?.team_captain}</div>
+        <div style={{ color: 'white' }}>Team Name: {user?.team_name}</div>
+        <div style={{ color: 'white' }}>College:{user?.college}</div>
+        <div style={{ color: 'white' }}>Team captain:{user?.team_captain}</div>
       </div>
     </>
   )
