@@ -4,7 +4,7 @@ import { useState, useContext, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Cookies from 'js-cookie'
 
-const profile = () => {
+const Profile = () => {
   const [user, setUser] = useState(null)
   // const {currentUser} = useContext(UserContext);
   // const currentUser =
@@ -42,4 +42,4 @@ const profile = () => {
   )
 }
 
-export default profile
+export default Profile;
