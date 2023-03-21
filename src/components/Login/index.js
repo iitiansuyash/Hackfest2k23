@@ -10,7 +10,7 @@ const Login = () => {
   // const navigate = useNavigate();
   const router = useRouter()
   const { setCurrentUser } = useContext(UserContext)
-  const REACT_APP_BACKEND_URL = 'http://localhost:8000/login'
+  const REACT_APP_BACKEND_URL = 'https://hackfest-backend-3y92.onrender.com/login'
   const [data, setData] = useState({
     team_name: '',
     team_captain: '',

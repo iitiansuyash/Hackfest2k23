@@ -51,13 +51,13 @@ export default class Carousel extends React.Component {
 					<h2 className="section-header">Glimpses of HackFest</h2>
 				</Container>
 				<div className="glimpses__container">
-					<Glimpse className={this.state.classNames[0]} img="9.jpg" />
-					<Glimpse className={this.state.classNames[1]} img="7.JPG" />
-					<Glimpse className={this.state.classNames[2]} img="10.jpg" />
-					<Glimpse className={this.state.classNames[3]} img="13.jpg" />
+					<Glimpse className={this.state.classNames[0]} img="1.jpg" />
+					<Glimpse className={this.state.classNames[1]} img="2.JPG" />
+					<Glimpse className={this.state.classNames[2]} img="3.jpg" />
+					<Glimpse className={this.state.classNames[3]} img="4.jpg" />
 					<Glimpse className={this.state.classNames[4]} img="5.jpg" />
-					<Glimpse className={this.state.classNames[5]} img="1.JPG" />
-					<Glimpse className={this.state.classNames[6]} img="2.JPG" />
+					<Glimpse className={this.state.classNames[5]} img="6.JPG" />
+					<Glimpse className={this.state.classNames[6]} img="7.JPG" />
 					<Glimpse className={this.state.classNames[7]} img="8.JPG" />
 				</div>
 				

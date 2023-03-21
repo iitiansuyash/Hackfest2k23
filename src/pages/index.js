@@ -49,7 +49,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      <main className={styles.main} ref={vantaRef}>
+      <main className={styles.main} ref={vantaRef} style={{ overflowY: "hidden", overflow: "hidden" }}>
         <div className={styles.container}>
           <h1 className={styles.ttl}>Hackfest 2k23</h1>
           <h2 className={styles.subttl}>Tagline Here</h2>

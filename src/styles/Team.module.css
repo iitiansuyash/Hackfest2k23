@@ -94,7 +94,7 @@ body {
 }
 #main .card {
   width: 300px;
-  height: 320px;
+  height: 340px;
   float: left;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
@@ -118,8 +118,8 @@ body {
   z-index: 2;
 }
 #main .card .image {
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
   background-position: center;
   background-size: cover !important;
   border-radius: 100%;

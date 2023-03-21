@@ -17,7 +17,7 @@ const Announcement = () => {
   return (
     <>
     <Navbar/>
-      <h1 style={{color:'white'}}>ANNOUNCEMENTS</h1>
+      <h1 style={{color:'white'}}>GENERAL ANNOUNCEMENTS</h1>
       <div style={{color:'white'}}>
         {announcement.map((item, i) => (
           <Announcements text={item.title} description={item.description} key={i} />

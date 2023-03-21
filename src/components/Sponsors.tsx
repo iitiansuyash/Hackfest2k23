@@ -33,6 +33,12 @@ export default class Sponsors extends React.Component {
 					<Container>
 						<h2 className="section-header">Past Sponsors</h2>
 						<div className="sponsors-list">
+						<a href="https://www.atlassian.com/" target="_blank">
+								<img src="./assets/images/sponsors/atlassian.png" className="img-fluid" />
+							</a> 
+						<a href="https://www.capgemini.com/" target="_blank">
+								<img src="./assets/images/sponsors/Capgemini_Logo_Color_eMedia.jpg" className="img-fluid" />
+							</a> 
 							<a href="https://juspay.in/" target="_blank">
 								<img src="./assets/images/sponsors/jus_pay.jpg" className="img-fluid" />
 							</a>

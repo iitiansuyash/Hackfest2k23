@@ -16,7 +16,7 @@ const Footer = () => {
                                 <div className="logo-widget footer-widget mx-auto">
                                     <figure className="logo-box mx-auto"><a href="#"><img src="./assets/images/sponsors/hfOfficialLogo.png" alt="" /></a></figure>
                                     <div className="textFooter">
-                                        <p>HACKFEST 2K22 | IIT (ISM) DHANBAD</p>
+                                        <p>HACKFEST 2K23 | IIT (ISM) DHANBAD</p>
                                     </div>
                                     <ul className="footer-social ulist ">
                                         <li><a href="https://www.facebook.com/hackfestiitism/" target="_blank"><i className="fab fa-facebook-f link"></i></a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
                                     <div className="footer-title">Contact Us</div>
                                     <div className="textFooter">
                                         <p>Police Line Road, Main Campus IIT ISM, Near Rani Bandh, Hirapur, Sardar Patel Nagar, Dhanbad, Jharkhand - 826004</p>
-                                        <p>+91 982 9102 475</p>
+                                        <p>+91 62612 86580</p>
                                         <p>hackfest@iitism.ac.in</p>
                                     </div>
                                 </div>

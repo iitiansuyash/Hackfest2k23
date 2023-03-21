@@ -9,7 +9,7 @@ const Login = () => {
   const router = useRouter()
   const { setCurrentUser } = useContext(UserContext)
   // const navigate = useNavigate();
-  const REACT_APP_BACKEND_URL = 'http://localhost:8000/register'
+  const REACT_APP_BACKEND_URL = 'http://localhost:8000/register';
   const [data, setData] = useState({
     team_name: '',
     team_captain: '',

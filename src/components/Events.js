@@ -30,7 +30,7 @@ export default function Events() {
 
     return ( 
     <>
-    <main className={styles.main} ref={vantaRef}>
+    <main className={styles.main} ref={vantaRef} style={{ overflowY: "hidden", overflow: "hidden" }}>
     <div className={styles.container}>
           <h1 className={styles.ttl}>Events</h1>
             <p style={{textAlign: "center", fontSize: "2rem"}}>Coming Soon...</p>
