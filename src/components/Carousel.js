@@ -57,8 +57,8 @@ export default class Carousel extends React.Component {
 					<Glimpse className={this.state.classNames[3]} img="4.jpg" />
 					<Glimpse className={this.state.classNames[4]} img="5.jpg" />
 					<Glimpse className={this.state.classNames[5]} img="6.JPG" />
-					<Glimpse className={this.state.classNames[6]} img="7.JPG" />
-					<Glimpse className={this.state.classNames[7]} img="8.JPG" />
+					<Glimpse className={this.state.classNames[6]} img="10.JPG" />
+					<Glimpse className={this.state.classNames[7]} img="13.JPG" />
 				</div>
 				
 			</section>

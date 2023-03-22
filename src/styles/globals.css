@@ -830,3 +830,31 @@ a {
 	left: 200vw;
 	opacity: 0;
 }
+
+/* Preloader */
+
+.spinner-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  background-color: #11041b;
+  z-index: 1500;
+}
+
+.spinner {
+  background-image: url(../../public/assets/images/gallery/hackfest_logo.gif);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  /* opacity: ; */
+  /* animation: rotation 2s infinite linear; */
+
+}
+

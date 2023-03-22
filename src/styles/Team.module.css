@@ -1,84 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Genos"); */
-/* * {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-} */
-/* 
-body {
-  background: #27276c;
-  font-family: "Genos";
-  color: #fafafa;
-} */
-
-/* #main {
-  width: 100%;
-  min-height: 94vh;
-  padding: 40px;
-  display: flex;
- 
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 65px 75px;
-}
-#main .card {
-  width: 400px;
-  height: 320px;
-  float: left;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
-  overflow: hidden;
-  padding: 12px 30px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  transition: transform 0.3s 0.1s;
-  border-radius: 18px;
-  border-top: 2px solid rgba(255, 255, 255, 0.5);
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
-}
-#main .card:hover {
-  transform: scale(1.2);
-  z-index: 2;
-}
-#main .card .image {
-  width: 140px;
-  border-radius: 100%;
-  align-self: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-#main .card .title {
-  margin-bottom: 12px;
-}
-#main .card .text {
-  font-size: 12pt;
-}
-
-.ttl {
-  font-size: 4rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  justify-content: center;
-  text-align: center;
-  font-family: "Genos";
-} */
-
-
 @import url("https://fonts.googleapis.com/css2?family=Genos");
-/* * {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-} */
-/* 
-body {
-  background: #27276c;
-  font-family: "Genos";
-  color: #fafafa;
-} */
+
 
 #main {
   width: 100%;
@@ -94,7 +15,7 @@ body {
 }
 #main .card {
   width: 300px;
-  height: 340px;
+  height: 360px;
   float: left;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
@@ -140,7 +61,7 @@ body {
 @media only screen and (max-width: 980px) {
   #main .card {
     width: 320px;
-    height: 300px;
+    height: 350px;
   }
   #main .card .title {
     font-size: 1.2rem;
@@ -154,7 +75,9 @@ body {
     align-items: center;
     /* height: 100%; */
     font-family: Genos;
-    padding: 0 0 0 30px;
+    padding: 4rem 0 0 0;
+    background-color: #000;
+
   }
   .ttl {
     font-size: 6rem;
