@@ -851,8 +851,8 @@ a {
 .spinner {
   background-image: url(../../public/assets/images/gallery/hackfest_logo.gif);
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 10%;
   /* border-color: #ff0000; */
   opacity: 0.8;
@@ -861,8 +861,8 @@ a {
 
 @media only screen and (max-width: 600px) {
   .spinner {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 }
 

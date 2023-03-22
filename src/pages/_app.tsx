@@ -10,7 +10,8 @@ function Loading() {
   return (
     <>
       <div className="spinner-wrapper">
-        <div className="spinner" />
+        {/* <div className="spinner" /> */}
+        <img src='./assets/images/gallery/hackfest_logo.gif' className='spinner'/>
       </div>
     </>
   )
@@ -21,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 4000)
   })
   useEffect(() => {
     const threeScript = document.createElement('script')

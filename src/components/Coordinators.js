@@ -125,7 +125,7 @@ export default class Coordinators extends React.Component {
           </Row>
           <Row>
             <Col md={12}>
-              <Link href="/team">
+              <Link href="/team" legacyBehavior>
                 <a className="team-btn-anchor">
                   <button className="team-btn">Team</button>
                 </a>
