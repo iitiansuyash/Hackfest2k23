@@ -11,6 +11,7 @@ import Faq from '@/components/Faq';
 import Timeline from '@/components/Timeline'
 import Sponsors from '@/components/Sponsors'
 import Glimpse from '@/components/Carousel'
+import Coordinators from '@/components/Coordinators'
 import Testimonials from '@/components/Testimonials'
 import { useEffect, useRef, useState } from 'react'
 import GLOBE from "vanta/dist/vanta.globe.min"
@@ -52,15 +53,16 @@ export default function Home() {
       <main className={styles.main} ref={vantaRef} style={{ overflowY: "hidden", overflow: "hidden" }}>
         <div className={styles.container}>
           <h1 className={styles.ttl}>Hackfest 2k23</h1>
-          <h2 className={styles.subttl}>Tagline Here</h2>
+          <h2 className={styles.subttl}>Ideate Innovate Iterate</h2>
           <h2 className={styles.subttl}>7th to 9th APRIL</h2>
           <h2 className={styles.subttl}>IIT ISM Dhanbad</h2>
         </div>
       </main>
       <About/>
-      {/* <Timeline/> */}
       <Glimpse/>
+      <Coordinators/>
       <Events/>
+      {/* <Timeline/> */}
       {/* <Testimonials/> */}
       <Faq/>
       <Sponsors/>

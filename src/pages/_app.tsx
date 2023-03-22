@@ -4,40 +4,25 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import UserProvider from '../contexts/user.context'
+import { SmoothProvider } from 'react-smooth-scrolling'
 
 function Loading() {
-  const router = useRouter()
-  const [loading, setLoading] = useState(false)
-  useEffect(() => {
-    const handleStart = (url: any) => setLoading(true)
-    const handleComplete = (url: any) =>
-      setTimeout(() => {
-        setLoading(false)
-      }, 1000)
-
-    router.events.on('routeChangeStart', handleStart)
-    router.events.on('routeChangeComplete', handleComplete)
-    router.events.on('routeChangeError', handleComplete)
-
-    return () => {
-      router.events.off('routeChangeStart', handleStart)
-      router.events.off('routeChangeComplete', handleComplete)
-      router.events.off('routeChangeError', handleComplete)
-    }
-  })
-
   return (
     <>
-      {loading && (
-        <div className="spinner-wrapper">
-          <div className="spinner" />
-        </div>
-      )}
+      <div className="spinner-wrapper">
+        <div className="spinner" />
+      </div>
     </>
   )
 }
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  })
   useEffect(() => {
     const threeScript = document.createElement('script')
     threeScript.setAttribute('id', 'threeScript')
@@ -54,9 +39,8 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
 
   return (
-    <>
-      <Loading />
-      <Component {...pageProps} />
-    </>
+    // <SmoothProvider skew={true}>
+    <>{loading ? <Loading /> : <Component {...pageProps} />}</>
+    // </SmoothProvider>
   )
 }

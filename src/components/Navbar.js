@@ -55,7 +55,7 @@ const Navbar = () => {
             >
               <a target="_blank">LinkedIn</a>
             </Link>
-            {currentUser ? (
+            {/* {currentUser ? (
               <Link href="/profile" passHref={true} legacyBehavior={true}>
                 <a>
                   <img
@@ -66,7 +66,7 @@ const Navbar = () => {
               </Link>
             ) : (
               <div></div>
-            )}
+            )} */}
           </div>
         </div>
       </section>

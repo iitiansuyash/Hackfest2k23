@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@types/node": "18.14.6",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
@@ -25,6 +28,7 @@
     "react-dom": "18.2.0",
     "react-router-dom": "^6.9.0",
     "react-scrollable-anchor": "^0.6.1",
+    "react-smooth-scrolling": "^1.0.2",
     "reactstrap": "^9.1.6",
     "three": "^0.150.1",
     "typescript": "4.9.5",
