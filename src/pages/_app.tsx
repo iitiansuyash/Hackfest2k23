@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import UserProvider from '../contexts/user.context'
 
-function Loading(): false | JSX.Element {
+function Loading() {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   useEffect(() => {
@@ -25,12 +25,15 @@ function Loading(): false | JSX.Element {
       router.events.off('routeChangeError', handleComplete)
     }
   })
+
   return (
-    loading && (
-      <div className="spinner-wrapper">
-        <div className="spinner" />
-      </div>
-    )
+    <>
+      {loading && (
+        <div className="spinner-wrapper">
+          <div className="spinner" />
+        </div>
+      )}
+    </>
   )
 }
 
@@ -49,6 +52,7 @@ export default function App({ Component, pageProps }: AppProps) {
       }
     }
   }, [])
+
   return (
     <>
       <Loading />

@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.js", "src/components/Sponsors.js", "src/components/Footer.tsx", "src/components/Events.js", "src/components/Question.js", "src/components/Faq.js", "src/components/Glimpse.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.js", "src/components/Sponsors.js", "src/components/Footer.js", "src/components/Events.js", "src/components/Question.js", "src/components/Faq.js", "src/components/Glimpse.js", "src/components/Countdown.js", "src/components/About.js", "src/components/Navbar.js"],
   "exclude": ["node_modules"]
 }

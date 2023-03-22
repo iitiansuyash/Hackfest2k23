@@ -853,7 +853,8 @@ a {
   width: 300px;
   height: 300px;
   border-radius: 5%;
-  /* opacity: ; */
+  /* border-color: #ff0000; */
+  opacity: 0.8;
   /* animation: rotation 2s infinite linear; */
 
 }
