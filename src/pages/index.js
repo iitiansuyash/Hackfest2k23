@@ -12,6 +12,7 @@ import Timeline from '@/components/Timeline'
 import Sponsors from '@/components/Sponsors'
 import Glimpse from '@/components/Carousel'
 import Coordinators from '@/components/Coordinators'
+import PrevWinners from '@/components/PrevWinners'
 import Testimonials from '@/components/Testimonials'
 import { useEffect, useRef, useState } from 'react'
 import GLOBE from 'vanta/dist/vanta.globe.min'
@@ -74,6 +75,7 @@ export default function Home() {
       <Glimpse />
       <Coordinators />
       <Events />
+      <PrevWinners />
       {/* <Timeline/> */}
       {/* <Testimonials/> */}
       <Faq />

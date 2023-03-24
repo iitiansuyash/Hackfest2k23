@@ -954,3 +954,41 @@ a {
 .team-btn-anchor:hover {
   text-decoration: none;
 }
+
+
+
+
+/* Fill button styling */
+
+/* Fill button styling */
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 7px 25px 7px;
+  outline: 0;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  /* margin: 0 0 0 75vh; */
+  /* width: 20% !important; */
+}
+
+
+.fill::after {
+  content: "";
+  background-color: #000000b4;
+  /* width: 100%; */
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/* End of Fill Button  */

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos');
+
+.about {
+  padding: 40px 0;
+  /* background-color: #fbfbfb; */
+  background-color: #000;
+  font-family: 'Genos';
+}
+
+.about .division {
+  margin: 30px 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #f7f7f7;
+}
+
+/* .sectionHeader {
+  font-size: 6rem;
+  margin: 0 auto;
+  padding: 0 3rem 3rem 0rem;
+  color: #fafafa;
+} */
+.sectionSubHead {
+  text-align: center;
+  color: #f7f7f7;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+.hr1 {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient
+    (to right, rgba(129, 123, 123, 0), #ffffff, rgba(171, 166, 166, 0));
+}
+
+
+
+
