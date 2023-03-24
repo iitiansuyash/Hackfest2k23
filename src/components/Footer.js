@@ -65,9 +65,9 @@ const Footer = () => {
                         Nagar, Dhanbad, Jharkhand - 826004
                       </p>
 
-                      <tr onclick="window.open('tel:88249 17959);">
+                      <p onclick="window.open('tel:88249 17959);">
                         +91 88249 17959
-                      </tr>
+                      </p>
                       <p onClick={(e) => {window.location.href ='mailto:hackfest@iitism.ac.in';}}>
                         hackfest@iitism.ac.in
                       </p>
