@@ -3,23 +3,26 @@ import axios from "axios";
 import { useRouter } from "next/router";
 // import TeamMemberInput from "./TeamMemberInput";
 // import { useNavigate } from "react-router-dom";
-import { UserContext } from "../../contexts/user.context";
-import Navbar from "../Navbar";
+import { UserContext } from "./../contexts/user.context";
+import Navbar from "./Navbar";
 import Cookies from "js-cookie";
-const Login = () => {
+const ChangePassword = () => {
   // const navigate = useNavigate();
   const router = useRouter();
   const { setCurrentUser } = useContext(UserContext);
   const REACT_APP_BACKEND_URL =
     "https://hackfest-backend-3y92.onrender.com/login";
   const [data, setData] = useState({
-    team_name: "",
-    team_captain: "",
-    password: "",
-    team_captain_email: "",
-    team_captain_phone: "",
-    college: "",
-    team_members: [],
+    Player_Email: "",
+    old_password: "",
+    new_password: "",
+    // team_name: "",
+    // team_captain: "",
+    // password: "",
+    // team_captain_email: "",
+    // team_captain_phone: "",
+    // college: "",
+    // team_members: [],
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -78,8 +81,17 @@ const Login = () => {
             }}
           />
           <input
-            name="password"
-            type="password"
+            name="old_password"
+            type="old password"
+            placeholder="password"
+            required
+            onChange={(e) => {
+              handleChange(e);
+            }}
+          />
+          <input
+            name="new_password"
+            type="new password"
             placeholder="password"
             required
             onChange={(e) => {
@@ -101,4 +113,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ChangePassword;
