@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -11,6 +12,7 @@ import Faq from '@/components/Faq'
 import Timeline from '@/components/Timeline'
 import Sponsors from '@/components/Sponsors'
 import Glimpse from '@/components/Carousel'
+import Prizes from '@/components/Prizes'
 import Coordinators from '@/components/Coordinators'
 import PrevWinners from '@/components/PrevWinners'
 import Testimonials from '@/components/Testimonials'
@@ -69,6 +71,9 @@ export default function Home() {
           </h2>
           <h2 className={styles.subttl}>7th to 9th APRIL</h2>
           <h2 className={styles.subttl}>IIT ISM Dhanbad</h2>
+          <Link href="https://unstop.com/hackathons/hackfest-2023-indian-institute-of-technology-iit-ism-dhanbad-650496">
+            <button className={styles.btn}>Register</button>
+          </Link>
         </div>
       </main>
       <About />
@@ -76,6 +81,7 @@ export default function Home() {
       <Coordinators />
       <Events />
       <PrevWinners />
+      <Prizes />
       {/* <Timeline/> */}
       {/* <Testimonials/> */}
       <Faq />

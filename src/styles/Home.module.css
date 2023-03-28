@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Genos");
 
 .main {
-  padding: 12rem 0;
+  padding: 10rem 0;
   width: 100%;
   height: 100vh;
   color: #fafafa;
@@ -30,6 +30,26 @@
   margin-bottom: 1rem;
 }
 
+.btn{
+  background-color: #fafafae2;
+  color: #000000da;
+  border: none;
+  padding: 0.5rem 5.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1rem;
+
+}
+.btn:hover{
+  
+  background-color: #000000df;
+  color: #fafafa;
+  transition: all 0.3s ease-in-out;
+}
+
 @media only screen and (max-width: 760px) {
   .ttl {
     font-size: 5rem;
@@ -40,5 +60,10 @@
   .container{
     padding: 0 0 0 30px;
   }
+  .btn{
+    padding: 0.5rem 3.5rem;
+    font-size: 1.5rem;
+  }
+  
 
 }
