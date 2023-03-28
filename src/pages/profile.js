@@ -34,9 +34,9 @@ export default function Profile() {
       {/* <p style={{ color: 'white' }}>{user?.team_name}</p> */}
       <div style={{marginTop:'3rem'}}>
         <div style={{ color: 'white' }}>user profile</div>
-        <div style={{ color: 'white' }}>Team Name: {user?.team_name}</div>
+        <div style={{ color: 'white' }}>Team Name: {user?.Team_Name}</div>
         <div style={{ color: 'white' }}>College:{user?.college}</div>
-        <div style={{ color: 'white' }}>Team captain:{user?.team_captain}</div>
+        <div style={{ color: 'white' }}>Team captain: {user?.Player_Email}</div>
       </div>
     </>
   )

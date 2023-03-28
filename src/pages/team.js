@@ -22,9 +22,29 @@ const Team = () => {
           <h1 className={styles.ttl}>Advisors</h1>
      </div>
       <main id={styles.main}>
-        {users.map((user, i) => (
-          <TeamCard user={user} key={i} />
-        ))}
+        {users.map((user, i) => {
+          if(user.type=='advisor'){
+            return(
+              <TeamCard user={user} key={i} />
+            )
+          }
+        }
+        
+        )}
+      </main>
+      <div className={styles.container}>
+          <h1 className={styles.ttl}>Team Leads</h1>
+     </div>
+      <main id={styles.main}>
+        {users.map((user, i) => {
+          if(user.type=='lead'){
+            return(
+              <TeamCard user={user} key={i} />
+            )
+          }
+        }
+        
+        )}
       </main>
     </>
   );
