@@ -1194,8 +1194,7 @@ a {
 
 .btnHero {
   /* flex: 1 1 auto; */
-  width: 15%;
-  margin: 10px;
+  width: 18%;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -1213,11 +1212,11 @@ a {
 
 @media only screen and (max-width: 600px){
   .btnHero {
-    width: 45%;
+    width: 50%;
   }
 }
 
 
 .btnHeroHero {
-  background-image: linear-gradient(to right, transparent 25%, #fafafa 51%, transparent 80%);
+  background-image: linear-gradient(to right, transparent 25%, #9d2b9c 51%, transparent 80%);
 }
