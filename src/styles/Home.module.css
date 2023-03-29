@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Genos");
+@import url('https://fonts.googleapis.com/css2?family=Genos');
 
 .main {
   padding: 10rem 0;
@@ -11,7 +11,7 @@
   overflow-x: hidden;
   /* font-family: 'Genos'; */
 }
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -30,8 +30,6 @@
   margin-bottom: 1rem;
 }
 
-
-
 @media only screen and (max-width: 760px) {
   .ttl {
     font-size: 5rem;
@@ -39,8 +37,7 @@
   .subttl {
     font-size: 2rem;
   }
-  .container{
+  .container {
     padding: 0 0 0 30px;
-  }  
-
+  }
 }

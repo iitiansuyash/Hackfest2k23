@@ -1201,7 +1201,8 @@ a {
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
+  /* color: white; */
+  background-color: transparent;
   box-shadow: 0 0 10px #eeeeeeb9;
   border-radius: 10px;
  }
@@ -1218,5 +1219,5 @@ a {
 
 
 .btnHeroHero {
-  background-image: linear-gradient(to right, #fafafa 0%, #000 51%, #fafafa 100%);
+  background-image: linear-gradient(to right, transparent 25%, #fafafa 51%, transparent 80%);
 }

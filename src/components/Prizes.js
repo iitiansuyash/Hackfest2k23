@@ -84,12 +84,12 @@ export default class Prizes extends React.Component {
           </div>
         </Container>
         {/* <Container>
-						<p className="sub-header">Other Prizes</p>
+						<p className="section-header">Problem Statements</p>
 						<div className="prizes-list">
 							capgemini
 							<div className="prize-card">
 								<div className="thumb">
-									<img src="./assets/images/sponsors/ca1.png" className="img-fluid" style={{ height: "100px" }} />
+									<img src="./assets/images/sponsors/cap1.png" className="img-fluid" style={{ height: "100px" }} />
 								</div>
 								<div className="prize-content">
 
@@ -131,7 +131,7 @@ export default class Prizes extends React.Component {
 							texmin
 							<div className="prize-card">
 								<div className="thumb">
-									<img src="./assets/images/sponsors/texin - logo-18.png" className="img-fluid" />
+									<img src="./assets/images/sponsors/texmin-logo-18.png" className="img-fluid" />
 								</div>
 								<div className="prize-content">
 
