@@ -1,13 +1,9 @@
 import React from 'react'
 import { Container } from 'reactstrap'
-// import ScrollableAnchor from 'react-scrollable-anchor';
 import Button from 'react-bootstrap/Button'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-// import { MDBIcon } from "mdbreact";
 import NET from 'vanta/dist/vanta.net.min'
 import * as THREE from 'three'
-
-// import '../assets/styles/prizes.css';
 
 export default class Prizes extends React.Component {
   constructor(props) {
@@ -23,11 +19,6 @@ export default class Prizes extends React.Component {
     window.addEventListener('resize', this.updateDimensions)
     this.vantaEffect = NET({
       el: this.vantaRef.current,
-      mouseControls: window.innerWidth > 600,
-      touchControls: window.innerWidth > 600,
-      gyroControls: false,
-      minHeight: 100.0,
-      minWidth: 200.0,
       color: 0xffffff,
       backgroundColor: 0x0,
       scale: 1.0,
@@ -51,7 +42,6 @@ export default class Prizes extends React.Component {
       <section className="prizes" id="prizes" ref={this.vantaRef}>
         <Container>
           <h2 className="section-header">Prizes</h2>
-          {/* <p className="sub-header">Cash Prizes</p> */}
           <div className="prizes-list">
             <div className="cash-prize-card">
               <div className="up">
@@ -80,6 +70,14 @@ export default class Prizes extends React.Component {
               <div className="cash-prize-content">
                 <div className="title">3rd Place</div>
                 <div className="amount">Rs. 20000</div>
+                <div className="extra">+ Goodies and Cool Swags</div>
+              </div>
+            </div>
+            <div className="cash-prize-card">
+              <div className="up"></div>
+              <div className="cash-prize-content">
+                <div className="title">4th - 10th Place</div>
+                <div className="amount">Rs. 2000</div>
                 <div className="extra">+ Goodies and Cool Swags</div>
               </div>
             </div>
@@ -147,7 +145,6 @@ export default class Prizes extends React.Component {
 						</div>
 					</Container> */}
       </section>
-      //</ScrollableAnchor>
     )
   }
 }

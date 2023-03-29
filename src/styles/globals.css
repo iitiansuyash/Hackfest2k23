@@ -930,17 +930,16 @@ a {
   margin: 25px auto;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: #fffffff1;
   padding: 10px 30px;
   border: 2px solid #000012;
-  /* border: 2px solid black; */
-  border-radius: 24px;
+  border-radius: 10px;
   cursor: pointer;
   color: #000012;
-  /* color: black; */
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-style: none;
+  text-decoration: none;
 }
 
 .team-btn:hover,
@@ -968,6 +967,7 @@ a {
   padding: 7px 25px 7px;
   outline: 0;
   border: 1px solid rgb(255, 255, 255);
+  border-radius: 6px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   /* margin: 0 0 0 75vh; */
@@ -1185,4 +1185,38 @@ a {
 .extraLittleText{
 	text-align: center;
 	color: plum;
+}
+
+
+
+
+
+
+.btnHero {
+  /* flex: 1 1 auto; */
+  width: 15%;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eeeeeeb9;
+  border-radius: 10px;
+ }
+
+.btnHero:hover {
+  background-position: right center;
+}
+
+@media only screen and (max-width: 600px){
+  .btnHero {
+    width: 45%;
+  }
+}
+
+
+.btnHeroHero {
+  background-image: linear-gradient(to right, #fafafa 0%, #000 51%, #fafafa 100%);
 }

@@ -52,7 +52,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar team_nav="/#sponsors" team_about="/#about" team_contact="/#contact"  />
+      <Navbar
+        team_nav="/#sponsors"
+        team_about="/#about"
+        team_contact="/#contact"
+      />
       <main
         className={styles.main}
         ref={vantaRef}
@@ -71,8 +75,12 @@ export default function Home() {
           </h2>
           <h2 className={styles.subttl}>7th to 9th APRIL</h2>
           <h2 className={styles.subttl}>IIT ISM Dhanbad</h2>
-          <Link href="https://unstop.com/hackathons/hackfest-2023-indian-institute-of-technology-iit-ism-dhanbad-650496">
-            <button className={styles.btn}>Register</button>
+          <Link
+            href="https://unstop.com/hackathons/hackfest-2023-indian-institute-of-technology-iit-ism-dhanbad-650496"
+            passHref={true}
+            legacyBehavior={true}
+          >
+            <button className="btnHero btnHeroHero">Register</button>
           </Link>
         </div>
       </main>
