@@ -60,15 +60,15 @@ const Footer = () => {
                   <div className="contact-widget footer-widget">
                     <div className="footer-title">Contact Us</div>
                     <div className="textFooter">
-                      <p>
-                        IIT ISM Main Campus, Near Rani Bandh, Sardar Patel
-                        Nagar, Dhanbad, Jharkhand - 826004
+                      <p>NVCTI, CRE Building, IIT (ISM), Dhanbad 826004</p>
+                      <p onclick="window.open('tel:9871842597);">
+                        +91 98718 42597
                       </p>
-
-                      <p onclick="window.open('tel:88249 17959);">
-                        +91 88249 17959
-                      </p>
-                      <p onClick={(e) => {window.location.href ='mailto:hackfest@iitism.ac.in';}}>
+                      <p
+                        onClick={(e) => {
+                          window.location.href = 'mailto:hackfest@iitism.ac.in'
+                        }}
+                      >
                         hackfest@iitism.ac.in
                       </p>
                     </div>

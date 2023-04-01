@@ -1,53 +1,45 @@
-import Navbar from "@/components/Navbar";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import TeamCard from "../components/TeamCard";
-import styles from "../styles/Team.module.css";
+import Navbar from '@/components/Navbar'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import TeamCard from '../components/TeamCard'
+import styles from '../styles/Team.module.css'
 const Team = () => {
-  const BACKEND_URL = "https://hackfest-backend-3y92.onrender.com/organizing";
-  const [users, setUsers] = useState([]);
+  const BACKEND_URL = 'https://hackfest-backend-3y92.onrender.com/organizing'
+  const [users, setUsers] = useState([])
   useEffect(() => {
     const fun = async () => {
-      const res = await axios.get(BACKEND_URL);
-      console.log(res);
-      setUsers(res.data);
-    };
-    fun();
-  }, []);
+      const res = await axios.get(BACKEND_URL)
+      console.log(res)
+      setUsers(res.data)
+    }
+    fun()
+  }, [])
 
   return (
     <>
-      <Navbar />
+      <Navbar team_nav="/#sponsors" team_about="/#about" team_contact="/#contact" />
       <div className={styles.container}>
-          <h1 className={styles.ttl}>Advisors</h1>
-     </div>
+        <h1 className={styles.ttl}>Advisors</h1>
+      </div>
       <main id={styles.main}>
         {users.map((user, i) => {
-          if(user.type=='advisor'){
-            return(
-              <TeamCard user={user} key={i} />
-            )
+          if (user.type == 'advisor') {
+            return <TeamCard user={user} key={i} />
           }
-        }
-        
-        )}
+        })}
       </main>
       <div className={styles.container}>
-          <h1 className={styles.ttl}>Team Leads</h1>
-     </div>
+        <h1 className={styles.ttl}>Team Leads</h1>
+      </div>
       <main id={styles.main}>
         {users.map((user, i) => {
-          if(user.type=='lead'){
-            return(
-              <TeamCard user={user} key={i} />
-            )
+          if (user.type == 'lead') {
+            return <TeamCard user={user} key={i} />
           }
-        }
-        
-        )}
+        })}
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Team;
+export default Team

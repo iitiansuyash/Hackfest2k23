@@ -5,8 +5,11 @@ import { UserContext } from '@/contexts/user.context'
 import { useContext, useEffect } from 'react'
 import axios from 'axios'
 
-const Navbar = () => {
+const Navbar = (prop) => {
   const { currentUser } = useContext(UserContext)
+  let x = prop.team_nav
+  let y = prop.team_about
+  let z = prop.team_contact
   // useEffect(()=>{
   //   const fun = async()=>{
   //     const data =await axios.get('')
@@ -34,19 +37,19 @@ const Navbar = () => {
 
           <div className="nav-links">
             <Link href="/" passHref={true} legacyBehavior={true}>
-              <a>Home</a>
+              Home
             </Link>
-            <Link href="#about" passHref={true} legacyBehavior={true}>
-              <a>About</a>
+            <Link href={y} passHref={true} legacyBehavior={true}>
+              About
             </Link>
             <Link href="/team" passHref={true} legacyBehavior={true}>
-              <a>Team</a>
+              Team
             </Link>
-            <Link href="#sponsors" passHref={true} legacyBehavior={true}>
-              <a>Sponsors</a>
+            <Link href={x} passHref={true} legacyBehavior={true}>
+              Sponsors
             </Link>
-            <Link href="#contact" passHref={true} legacyBehavior={true}>
-              <a>Contact</a>
+            <Link href={z} passHref={true} legacyBehavior={true}>
+              Contact
             </Link>
             <Link
               href="https://www.linkedin.com/in/hackfest-iit-ism-dhanbad-574021159"
