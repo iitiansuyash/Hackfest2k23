@@ -20,12 +20,18 @@ export default function Profile() {
     const data = localStorage.getItem('data');
     if (data) {
       try {
+        console.log(JSON.parse(data));
         setUser(JSON.parse(data));
       } catch (error) {
         console.error(error);
       }
     }
+    else{
+      console.log("hi")
+    }
   }, []);
+  const ann = user?.announcement;
+  console.log(ann[0]);
   // console.log(user?.team_name);
   return (
     <>
@@ -37,6 +43,19 @@ export default function Profile() {
         <div style={{ color: 'white' }}>Team Name: {user?.Team_Name}</div>
         <div style={{ color: 'white' }}>College: {user?.college}</div>
         <div style={{ color: 'white' }}>Team captain: {user?.Player_Email}</div>
+        <div onClick={()=>{
+          console.log(user);
+        }}style={{ color: 'white' }}>Announcements: 
+          <ul>
+            {
+              ann.map((item,i)=>{
+                return(
+                  <li>{item.title}:{item.description}</li>
+                )
+              })
+            }
+          </ul>
+        </div>
       </div>
     </>
   )
