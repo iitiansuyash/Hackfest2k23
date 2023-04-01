@@ -11,7 +11,7 @@ const ChangePassword = () => {
   const router = useRouter();
   const { setCurrentUser } = useContext(UserContext);
   const REACT_APP_BACKEND_URL =
-    "https://hackfest-backend-3y92.onrender.com/login";
+    "https://hackfest-backend-3y92.onrender.com/change_password";
   const [data, setData] = useState({
     Player_Email: "",
     old_password: "",
@@ -68,7 +68,7 @@ const ChangePassword = () => {
       <br />
       <div className="login_wrap">
         <div className="login_1">
-          <span style={{ color: "white" }}>Sign Up for the hackfest</span>
+          <span style={{ color: "white" }}>Change Password</span>
         </div>
         <form>
           <input
@@ -83,7 +83,7 @@ const ChangePassword = () => {
           <input
             name="old_password"
             type="old password"
-            placeholder="password"
+            placeholder="old password"
             required
             onChange={(e) => {
               handleChange(e);
@@ -92,7 +92,7 @@ const ChangePassword = () => {
           <input
             name="new_password"
             type="new password"
-            placeholder="password"
+            placeholder="new password"
             required
             onChange={(e) => {
               handleChange(e);
