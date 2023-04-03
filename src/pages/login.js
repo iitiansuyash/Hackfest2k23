@@ -1,48 +1,49 @@
-import React, { useState, useContext } from 'react'
-import axios from 'axios'
-import { useRouter } from 'next/router'
+import React, { useState, useContext } from "react";
+import axios from "axios";
+import { useRouter } from "next/router";
 // import TeamMemberInput from "./TeamMemberInput";
 // import { useNavigate } from "react-router-dom";
-import { UserContext } from '../contexts/user.context'
-import Navbar from '../components/Navbar'
-import Cookies from 'js-cookie'
-import styles from '../styles/Login.module.css'
+import { UserContext } from "../contexts/user.context";
+import Navbar from "../components/Navbar";
+import Cookies from "js-cookie";
+import styles from "../styles/Login.module.css";
+import { cloneUniformsGroups } from "three";
 const Login = () => {
   // const navigate = useNavigate();
-  const router = useRouter()
-  const { setCurrentUser } = useContext(UserContext)
+  const router = useRouter();
+  const { setCurrentUser } = useContext(UserContext);
   const REACT_APP_BACKEND_URL =
-    'https://hackfest-backend-3y92.onrender.com/login'
+    "https://hackfest-backend-3y92.onrender.com/login";
   const [data, setData] = useState({
-    team_name: '',
-    team_captain: '',
-    password: '',
-    team_captain_email: '',
-    team_captain_phone: '',
-    college: '',
+    team_name: "",
+    team_captain: "",
+    password: "",
+    team_captain_email: "",
+    team_captain_phone: "",
+    college: "",
     team_members: [],
-  })
+  });
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setData({ ...data, [name]: value })
-  }
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
+  };
   const formSubmit = async () => {
     // console.log(data);
 
-    setData({ ...data })
+    setData({ ...data });
     try {
-      const res = await axios.post(REACT_APP_BACKEND_URL, data)
-      alert(res.data.message)
-      console.log(res.data.data)
-      setCurrentUser(res.data.data)
-      console.log(res)
-      localStorage.setItem('data', JSON.stringify(res.data.data))
-      console.log(JSON.parse(localStorage.getItem('data')))
+      const res = await axios.post(REACT_APP_BACKEND_URL, data);
+      alert(res.data.message);
+      // console.log(res.data.data);
+      setCurrentUser(res.data.data);
+      // console.log(res);
+      localStorage.setItem("data", JSON.stringify(res.data.data));
+      // console.log(JSON.parse(localStorage.getItem("data")));
       setTimeout(() => {
-        router.push('/profile')
-      }, 2000)
+        router.push("/profile");
+      }, 2000);
     } catch (err) {
-      alert(err)
+      alert(err);
     }
 
     // if (res.status == "200") {
@@ -54,7 +55,7 @@ const Login = () => {
     // } catch (error) {
     //   console.log(error);
     // }
-  }
+  };
   return (
     <>
       {/* <Navbar
@@ -65,12 +66,14 @@ const Login = () => {
       <div className={styles.background}>
         <div className={styles.shape}></div>
         <div className={styles.shape}></div>
-    </div>
-  
+      </div>
+
       <div className="login_wrap">
         <form className={styles.form}>
-        <h3>Login Here</h3>
-        <label htmlFor="username" className={styles.label}>Username</label>
+          <h3>Login Here</h3>
+          <label htmlFor="username" className={styles.label}>
+            Username
+          </label>
           <input
             className={styles.input}
             type="text"
@@ -79,19 +82,21 @@ const Login = () => {
             required
             placeholder="Team Leader's Email"
             onChange={(e) => {
-              handleChange(e)
+              handleChange(e);
             }}
           />
-          <label htmlFor="username" className={styles.label}>Password</label>
+          <label htmlFor="username" className={styles.label}>
+            Password
+          </label>
           <input
-          className={styles.input}
+            className={styles.input}
             type="password"
             id="password"
             name="password"
             placeholder="Password"
             required
             onChange={(e) => {
-              handleChange(e)
+              handleChange(e);
             }}
           />
 
@@ -99,8 +104,9 @@ const Login = () => {
             className={styles.button}
             type="submit"
             onClick={(e) => {
-              e.preventDefault()
-              formSubmit()
+              console.log("hi");
+              e.preventDefault();
+              formSubmit();
             }}
           >
             Submit
@@ -108,7 +114,7 @@ const Login = () => {
         </form>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

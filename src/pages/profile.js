@@ -1,12 +1,14 @@
-import React from 'react'
-import Link from 'next/link'
-import { UserContext } from '../contexts/user.context'
-import { useState, useContext, useEffect } from 'react'
-import Navbar from '../components/Navbar'
-import Cookies from 'js-cookie'
+import React from "react";
+import Link from "next/link";
+import { UserContext } from "../contexts/user.context";
+import { useState, useContext, useEffect } from "react";
+import Navbar from "../components/Navbar";
+import Cookies from "js-cookie";
+import axios from "axios";
 
 export default function Profile() {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(null);
+  const REACT_APP_BACKEND_URL = "https://hackfest-backend-3y92.onrender.com/";
   // const {currentUser} = useContext(UserContext);
   // const currentUser =
   // console.log("hi");
@@ -17,17 +19,34 @@ export default function Profile() {
   // console.log(user);/
   // console.log(window)
   // console.log(typeof(user));
+  const [ann, setAnn] = useState([]);
+  let teamdat;
   useEffect(() => {
-    const data = localStorage.getItem('data')
+    const data = localStorage.getItem("data");
     if (data) {
       try {
-        setUser(JSON.parse(data))
+        setUser(JSON.parse(data));
+        // console.log(JSON.parse(data));
+        const teamid = JSON.parse(data).Team_Id;
+        console.log(teamid);
+        const fun = async () => {
+          teamdat = (await axios.get(`${REACT_APP_BACKEND_URL}${teamid}`)).data;
+          setAnn(teamdat.announcement);
+        };
+        fun();
+        // console.log(teamdat);
+        // console.log("hi", teamdat.announcement);
+        // setAnn(teamdat?.announcement);
       } catch (error) {
-        console.error(error)
+        console.error(error);
       }
     }
-  }, [])
-  // console.log(user?.team_name);
+  }, []);
+  // useEffect(() => {
+  //   setAnn(teamdat?.announcement);
+  //   console.log(teamdat?.announcement);
+  // }, [teamdat]);
+  // console.log(user?.announcement);
   return (
     <>
       <Navbar
@@ -84,7 +103,7 @@ export default function Profile() {
                     style={{
                       // width: '580px',
                       // height: '175px',
-                      overflow: 'auto',
+                      overflow: "auto",
                     }}
                   >
                     <table className="table table-bordered">
@@ -112,7 +131,7 @@ export default function Profile() {
               <div className="card shadow-sm">
                 <div className="card-header bg-transparent border-0">
                   <h3 className="mb-0">
-                    <i className="far fa-clone pr-1"></i>{' '}
+                    <i className="far fa-clone pr-1"></i>{" "}
                     <strong>{user?.Team_Name}</strong> Announcement
                   </h3>
                 </div>
@@ -121,32 +140,21 @@ export default function Profile() {
                     id="style-1"
                     style={{
                       // width: '580px',
-                      height: '175px',
-                      overflow: 'auto',
+                      height: "175px",
+                      overflow: "auto",
                     }}
                   >
                     <table className="table table-bordered text-center">
-                      <tr>
-                        <td>Test announcement 1</td>
-                      </tr>
-                      <tr>
-                        <td>Test announcement 2</td>
-                      </tr>
-                      <tr>
-                        <td>After 5th announcement scroll in y direction</td>
-                      </tr>
-                      <tr>
-                        <td>Test announcement 4</td>
-                      </tr>
-                      <tr>
-                        <td>Test announcement 5</td>
-                      </tr>
-                      <tr>
-                        <td>Test announcement 6</td>
-                      </tr>
-                      <tr>
-                        <td>Test announcement 7</td>
-                      </tr>
+                      {ann.map((item, i) => (
+                        <tr key={i}>
+                          <td>
+                            <span style={{ fontWeight: "600" }}>
+                              {item.title}
+                            </span>
+                            :&nbsp;<span>{item.description}</span>
+                          </td>
+                        </tr>
+                      ))}
                     </table>
                   </div>
                 </div>
@@ -155,13 +163,13 @@ export default function Profile() {
           </div>
         </div>
         <Link href="/changepassword" passHref={true} legacyBehavior={true}>
-        <a className="team-btn-anchor">
-                  <button className="team-btn">Change Password</button>
-                </a>
+          <a className="team-btn-anchor">
+            <button className="team-btn">Change Password</button>
+          </a>
         </Link>
-        <br/>
-        <br/>
+        <br />
+        <br />
       </div>
     </>
-  )
+  );
 }
