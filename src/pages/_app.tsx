@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 import UserProvider from '../contexts/user.context'
 import { SmoothProvider } from 'react-smooth-scrolling'
 

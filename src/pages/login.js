@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { UserContext } from '../contexts/user.context'
 import Navbar from '../components/Navbar'
 import Cookies from 'js-cookie'
+import styles from '../styles/Login.module.css'
 const Login = () => {
   // const navigate = useNavigate();
   const router = useRouter()
@@ -56,31 +57,38 @@ const Login = () => {
   }
   return (
     <>
-      <Navbar team_nav="/#sponsors" team_about="/#about" team_contact="/#contact" />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <br />
+      {/* <Navbar
+        team_nav="/#sponsors"
+        team_about="/#about"
+        team_contact="/#contact"
+      /> */}
+      <div className={styles.background}>
+        <div className={styles.shape}></div>
+        <div className={styles.shape}></div>
+    </div>
+  
       <div className="login_wrap">
-        <div className="login_1">
-          <span style={{ color: 'white' }}>Sign Up for the hackfest</span>
-        </div>
-        <form>
+        <form className={styles.form}>
+        <h3>Login Here</h3>
+        <label htmlFor="username" className={styles.label}>Username</label>
           <input
-            name="Player_Email"
+            className={styles.input}
             type="text"
+            id="username"
+            name="Player_Email"
             required
-            placeholder="Team Captain Email"
+            placeholder="Team Leader's Email"
             onChange={(e) => {
               handleChange(e)
             }}
           />
+          <label htmlFor="username" className={styles.label}>Password</label>
           <input
-            name="password"
+          className={styles.input}
             type="password"
-            placeholder="password"
+            id="password"
+            name="password"
+            placeholder="Password"
             required
             onChange={(e) => {
               handleChange(e)
@@ -88,6 +96,8 @@ const Login = () => {
           />
 
           <button
+            className={styles.button}
+            type="submit"
             onClick={(e) => {
               e.preventDefault()
               formSubmit()

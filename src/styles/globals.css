@@ -939,6 +939,11 @@ a {
   font-weight: bold;
   letter-spacing: 2px;
   font-style: none;
+  /* text-decoration: none; */
+  justify-content: center;
+  align-items: center;
+  font-family: 'Genos';
+  align-self: center;
   text-decoration: none;
 }
 
@@ -1219,4 +1224,63 @@ a {
 
 .btnHeroHero {
   background-image: linear-gradient(to right, transparent 25%, #9d2b9c 51%, transparent 80%);
+}
+
+
+
+
+
+.student-profile{
+  /* padding: 20px; */
+  background-color: #000000;
+  font-family: 'Genos';
+}
+.student-profile .card {
+  border-radius: 10px;
+  font-family: 'Genos';
+}
+
+.student-profile .card .card-header .profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+
+}
+
+.student-profile .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.student-profile .card p {
+  font-size: 16px;
+  color: #000;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #000;
+}
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+  height: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }

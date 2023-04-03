@@ -59,7 +59,7 @@ const ChangePassword = () => {
   };
   return (
     <>
-      <Navbar />
+      <Navbar team_nav="/#sponsors" team_about="/#about" team_contact="/#contact" />
       <br />
       <br />
       <br />

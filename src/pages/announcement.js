@@ -16,7 +16,7 @@ const Announcement = () => {
 
   return (
     <>
-    <Navbar/>
+    <Navbar team_nav="/#sponsors" team_about="/#about" team_contact="/#contact" />
       <h1 style={{color:'white'}}>GENERAL ANNOUNCEMENTS</h1>
       <div style={{color:'white'}}>
         {announcement.map((item, i) => (
