@@ -1,13 +1,10 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
-// import TeamMemberInput from "./TeamMemberInput";
-// import { useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/user.context";
-import Navbar from "../components/Navbar";
-import Cookies from "js-cookie";
 import styles from "../styles/Login.module.css";
-import { cloneUniformsGroups } from "three";
+
+
 const Login = () => {
   // const navigate = useNavigate();
   const router = useRouter();
@@ -37,11 +34,11 @@ const Login = () => {
       // console.log(res.data.data);
       setCurrentUser(res.data.data);
       // console.log(res);
-      localStorage.setItem("data", JSON.stringify(res.data.data));
+      localStorage.setItem("Dammta", JSON.stringify(res.data.data));
       // console.log(JSON.parse(localStorage.getItem("data")));
       setTimeout(() => {
         router.push("/profile");
-      }, 2000);
+      }, 1000);
     } catch (err) {
       alert(err);
     }

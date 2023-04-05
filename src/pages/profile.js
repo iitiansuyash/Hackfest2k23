@@ -22,7 +22,7 @@ export default function Profile() {
   const [ann, setAnn] = useState([]);
   let teamdat;
   useEffect(() => {
-    const data = localStorage.getItem("data");
+    const data = localStorage.getItem("Dammta");
     if (data) {
       try {
         setUser(JSON.parse(data));

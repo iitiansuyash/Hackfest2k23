@@ -4,12 +4,14 @@ import Link from 'next/link'
 import { UserContext } from '@/contexts/user.context'
 import { useContext, useEffect } from 'react'
 import axios from 'axios'
-
+// import { useNavigate } from 'react-router-dom'
+import { useRouter } from "next/router";
 const Navbar = (prop) => {
   const { currentUser } = useContext(UserContext)
   let x = prop.team_nav
   let y = prop.team_about
   let z = prop.team_contact
+  const router = useRouter();
   // useEffect(()=>{
   //   const fun = async()=>{
   //     const data =await axios.get('')
@@ -17,6 +19,9 @@ const Navbar = (prop) => {
   //   fun()
 
   // },[])
+  const handleClick = ()=>{
+    console.log("hi");
+  }
   return (
     <>
       <section className={styles.navbar}>
@@ -58,6 +63,19 @@ const Navbar = (prop) => {
             >
               <a target="_blank">LinkedIn</a>
             </Link>
+            <div style={{color:"white"}}className='mydiv' onClick={()=>{
+              if(localStorage['Dammta']){
+                localStorage.setItem('Dammta',"");
+                setTimeout(() => {
+                  router.push("/");
+                }, 1000);
+              }
+              else{
+                router.push("/login");
+              }
+            }}>
+              {localStorage['Dammta']?`Logout`:`Login`}
+            </div>
             {/* {currentUser ? (
               <Link href="/profile" passHref={true} legacyBehavior={true}>
                 <a>

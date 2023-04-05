@@ -33,8 +33,8 @@ const Login = () => {
       console.log(res.data.data)
       setCurrentUser(res.data._doc)
       console.log(res.data._doc)
-      localStorage.setItem('data', JSON.stringify(res.data._doc))
-      console.log(JSON.parse(localStorage.getItem('data')))
+      localStorage.setItem('Dammta', JSON.stringify(res.data._doc))
+      console.log(JSON.parse(localStorage.getItem('Dammta')))
       setTimeout(() => {
         router.push('/profile')
       }, 2000)

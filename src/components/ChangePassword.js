@@ -38,8 +38,8 @@ const ChangePassword = () => {
       console.log(res.data.data);
       setCurrentUser(res.data.data);
       console.log(res);
-      localStorage.setItem("data", JSON.stringify(res.data.data));
-      console.log(JSON.parse(localStorage.getItem("data")));
+      localStorage.setItem("Dammta", JSON.stringify(res.data.data));
+      console.log(JSON.parse(localStorage.getItem("Dammta")));
       setTimeout(() => {
         router.push("/profile");
       }, 2000);
