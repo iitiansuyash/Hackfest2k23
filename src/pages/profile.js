@@ -24,6 +24,7 @@ export default function Profile() {
   const [ann, setAnn] = useState([]);
   const [inQR, setInQR] = useState('');
   const [outQR, setOutQR] = useState('');
+  const [att,setAtt]  = useState(0);
   let teamdat;
   useEffect(() => {
     const data = localStorage.getItem("Dammta");
@@ -38,6 +39,7 @@ export default function Profile() {
         const fun = async () => {
           teamdat = (await axios.get(`${REACT_APP_BACKEND_URL}${teamid}`)).data;
           setAnn(teamdat.announcement);
+          setAtt(teamdat.attendance_counter);
         };
         fun();
         // console.log(teamdat);
@@ -87,7 +89,7 @@ export default function Profile() {
                   </p>
                   <p className="mb-0">
                     <strong className="pr-1">Team Attendance: </strong>
-                    {user?.attendance_counter}
+                    {att}
                   </p>
                   <p className="mb-0">
                     <strong className="pr-1">Team Organisation: </strong>
@@ -170,8 +172,8 @@ export default function Profile() {
         </div>
         
         <br />
-        <div style={{display:'flex', flexDirection:'column',alignItems:'center',gap:'20px', justifyContent:'space-between', margin:'10px'}}>
-      <div style={{ height: "auto", margin: "10px", padding:'10px',maxWidth: '10rem', width: "100%",background: 'white' }}>
+        <div style={{display:'flex', flexWrap:'wrap',alignItems:'center',gap:'20px', justifyContent:'space-around', margin:'auto'}}>
+      <div style={{ height: "auto", margin: "10px", padding:'10px',maxWidth: '12rem', width: "100%",background: 'white' }}>
         <span style={{marginLeft:'10px', fontSize:'1.5rem'}}>IN QR</span>
     <QRCode
     size={256}
@@ -180,7 +182,7 @@ export default function Profile() {
     viewBox={`0 0 256 256`}
     />
 </div>
-<div style={{ height: "auto", margin: "10px",padding:'10px', maxWidth: '10rem', width: "100%",background: 'white' }}>
+<div style={{ height: "auto", margin: "10px",padding:'10px', maxWidth: '12rem', width: "100%",background: 'white' }}>
 <span style={{marginLeft:'10px', fontSize:'1.5rem'}}>OUT QR</span>
     <QRCode
     size={256}

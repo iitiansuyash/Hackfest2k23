@@ -33,18 +33,19 @@ const ChangePassword = () => {
 
     setData({ ...data });
     try {
+      console.log("hi");
       const res = await axios.post(REACT_APP_BACKEND_URL, data);
       alert(res.data.message);
       console.log(res.data.data);
       setCurrentUser(res.data.data);
       console.log(res);
-      localStorage.setItem("Dammta", JSON.stringify(res.data.data));
-      console.log(JSON.parse(localStorage.getItem("Dammta")));
+      localStorage.removeItem("Dammta");
+      // console.log(JSON.parse(localStorage.getItem("Dammta")));
       setTimeout(() => {
-        router.push("/profile");
+        router.push("/");
       }, 2000);
     } catch (err) {
-      alert(err);
+      console.log(err);
     }
 
     // if (res.status == "200") {
