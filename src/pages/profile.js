@@ -5,6 +5,8 @@ import { useState, useContext, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Cookies from "js-cookie";
 import axios from "axios";
+import QRCode from "react-qr-code";
+
 
 export default function Profile() {
   const [user, setUser] = useState(null);
@@ -20,6 +22,8 @@ export default function Profile() {
   // console.log(window)
   // console.log(typeof(user));
   const [ann, setAnn] = useState([]);
+  const [inQR, setInQR] = useState('');
+  const [outQR, setOutQR] = useState('');
   let teamdat;
   useEffect(() => {
     const data = localStorage.getItem("Dammta");
@@ -29,6 +33,8 @@ export default function Profile() {
         // console.log(JSON.parse(data));
         const teamid = JSON.parse(data).Team_Id;
         console.log(teamid);
+        setInQR(`in/${teamid}`)
+        setOutQR(`out/${teamid}`)
         const fun = async () => {
           teamdat = (await axios.get(`${REACT_APP_BACKEND_URL}${teamid}`)).data;
           setAnn(teamdat.announcement);
@@ -162,14 +168,36 @@ export default function Profile() {
             </div>
           </div>
         </div>
-        <Link href="/changepassword" passHref={true} legacyBehavior={true}>
+        
+        <br />
+        <div style={{display:'flex', flexDirection:'column',alignItems:'center',gap:'20px', justifyContent:'space-between', margin:'10px'}}>
+      <div style={{ height: "auto", margin: "10px", padding:'10px',maxWidth: '10rem', width: "100%",background: 'white' }}>
+        <span style={{marginLeft:'10px', fontSize:'1.5rem'}}>IN QR</span>
+    <QRCode
+    size={256}
+    style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+    value={inQR}
+    viewBox={`0 0 256 256`}
+    />
+</div>
+<div style={{ height: "auto", margin: "10px",padding:'10px', maxWidth: '10rem', width: "100%",background: 'white' }}>
+<span style={{marginLeft:'10px', fontSize:'1.5rem'}}>OUT QR</span>
+    <QRCode
+    size={256}
+    style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+    value={outQR}
+    viewBox={`0 0 256 256`}
+    />
+</div>
+      </div>
+      <Link href="/changepassword" passHref={true} legacyBehavior={true}>
           <a className="team-btn-anchor">
             <button className="team-btn">Change Password</button>
           </a>
         </Link>
-        <br />
-        <br />
+        <br/>
       </div>
+     
     </>
   );
 }
