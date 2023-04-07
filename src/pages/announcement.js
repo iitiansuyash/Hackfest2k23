@@ -17,12 +17,17 @@ const Announcement = () => {
   return (
     <>
     <Navbar team_nav="/#sponsors" team_about="/#about" team_contact="/#contact" />
-      <h1 style={{color:'white'}}>GENERAL ANNOUNCEMENTS</h1>
-      <div style={{color:'white'}}>
+    <div className="announcementSection">
+    <br/>
+    <br/>
+    <br/>
+      <h1 style={{color:"#fafafa", textAlign:"center", fontSize:"5.5rem"}}>NOTICE BOARD</h1>
+      <div style={{color:'#fafafa'}}>
         {announcement.map((item, i) => (
           <Announcements text={item.title} description={item.description} key={i} />
-        ))}
+          ))}
       </div>
+          </div>
     </>
   );
 };

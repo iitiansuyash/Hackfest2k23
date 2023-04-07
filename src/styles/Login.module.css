@@ -80,8 +80,13 @@
 @media only screen and (max-width: 600px){
     .form{
         transform: translate(0,0);
-        top: 30vh;
-        left: 10px;
+        top: 20vh;
+        left: 2px;
+        
+    }
+    .background{
+        display: none;
+        /* background-color: #e5e5e5; */
     }
 }
 
