@@ -147,7 +147,20 @@ export default class Prizes extends React.Component {
 
 									<p className='extraLittleText' style={{fontSize:'1.25rem'}}>NVCTI</p>
 									<div style={{ marginTop: "1rem" }}>
-										<btn className="btn-grad register-btn"><a href="https://docs.google.com/document/d/1vvxbmPtOMF1hSiUL80pXIFK1zLcZX-nwN966nz0bauw/edit?usp=sharing" target="_blank" style={{ color: 'white', textDecoration: 'none' }}>Problem Statement</a></btn>
+										<btn className="btn-grad register-btn"><a href="https://docs.google.com/document/d/1PUxhqLHcwj7Lqvn6aKITtF7gBBK1vSb-zA5eEyoOIJE/edit" target="_blank" style={{ color: 'white', textDecoration: 'none' }}>Problem Statement</a></btn>
+									</div>
+
+								</div>
+							</div>
+              <div className="prize-card">
+								<div className="thumb">
+									<img src="https://pbs.twimg.com/profile_images/1503350950739988481/YV4g3Qoe_400x400.jpg" className="img-fluid" style={{ height: "70px" }} />
+								</div>
+								<div className="prize-content">
+
+									<p className='extraLittleText' style={{fontSize:'1.25rem'}}>Texmin</p>
+									<div style={{ marginTop: "1rem" }}>
+										<btn className="btn-grad register-btn"><a href="https://docs.google.com/document/d/17VNP0p2EKw_NqusE9VotkxbYgsT5N2sQjgaokaN1ATI/edit?usp=sharing" target="_blank" style={{ color: 'white', textDecoration: 'none' }}>Problem Statement</a></btn>
 									</div>
 
 								</div>
