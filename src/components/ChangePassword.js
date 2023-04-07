@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 // import TeamMemberInput from "./TeamMemberInput";
 // import { useNavigate } from "react-router-dom";
 import { UserContext } from "./../contexts/user.context";
+import styles from "../styles/Login.module.css";
 import Navbar from "./Navbar";
 import Cookies from "js-cookie";
 const ChangePassword = () => {
@@ -60,19 +61,20 @@ const ChangePassword = () => {
   };
   return (
     <>
-      <Navbar team_nav="/#sponsors" team_about="/#about" team_contact="/#contact" />
-      <br />
-      <br />
-      <br />
-      <br />
+      {/* <Navbar team_nav="/#sponsors" team_about="/#about" team_contact="/#contact" /> */}
+      <div className={styles.background}>
+        <div className={styles.shape}></div>
+        <div className={styles.shape}></div>
+      </div>
 
-      <br />
       <div className="login_wrap">
-        <div className="login_1">
-          <span style={{ color: "white" }}>Change Password</span>
-        </div>
-        <form>
+        <form className={styles.form}>
+        <h3>Change Password</h3>
+        <label htmlFor="username" className={styles.label}>
+            Input Here
+          </label>
           <input
+          className={styles.input}
             name="Player_Email"
             type="text"
             required
@@ -82,6 +84,7 @@ const ChangePassword = () => {
             }}
           />
           <input
+          className={styles.input}
             name="old_password"
             type="old password"
             placeholder="old password"
@@ -91,6 +94,7 @@ const ChangePassword = () => {
             }}
           />
           <input
+          className={styles.input}
             name="new_password"
             type="new password"
             placeholder="new password"
@@ -101,6 +105,7 @@ const ChangePassword = () => {
           />
 
           <button
+          className={styles.button}
             onClick={(e) => {
               e.preventDefault();
               formSubmit();

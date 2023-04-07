@@ -4,7 +4,7 @@ function Countdown() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const countDownDate = new Date("April 06, 2023 23:59:59").getTime();
+    const countDownDate = new Date("April 07, 2023 23:59:59").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
