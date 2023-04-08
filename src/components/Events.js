@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import WAVES from "vanta/dist/vanta.waves.min"
 import * as THREE from "three"
 import styles from '../styles/Events.module.css'
+
 import Countdown from './Countdown';
 
 export default function Events() {
@@ -32,11 +33,10 @@ export default function Events() {
     <>
     <main className={styles.main} ref={vantaRef} style={{ overflowY: "hidden", overflow: "hidden" }}>
     <div className={styles.container}>
-          <h1 className={styles.ttl}>Events</h1>
-            <p style={{textAlign: "center", fontSize: "2rem"}}>Coming Soon...</p>
+          <h1 className={styles.ttl}>Timeline</h1>
      </div>
 
-        <Countdown />
+        {/* <Countdown /> */}
         
         
     </main>

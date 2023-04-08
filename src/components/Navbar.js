@@ -50,6 +50,9 @@ const Navbar = (prop) => {
             <Link href="/team" passHref={true} legacyBehavior={true}>
               Team
             </Link>
+            {/* <Link href="/announcement" passHref={true} legacyBehavior={true}>
+              Announcement
+            </Link> */}
             <Link href={x} passHref={true} legacyBehavior={true}>
               Sponsors
             </Link>

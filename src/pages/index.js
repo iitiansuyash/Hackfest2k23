@@ -9,6 +9,7 @@ import Footer from '@/components/Footer'
 import About from '@/components/About'
 import Events from '@/components/Events'
 import Faq from '@/components/Faq'
+import Schedule from '@/components/Schedule/Schedule';
 import Timeline from '@/components/Timeline'
 import Sponsors from '@/components/Sponsors'
 import Glimpse from '@/components/Carousel'
@@ -87,7 +88,8 @@ export default function Home() {
       <About />
       <Glimpse />
       <Coordinators />
-      <Events />
+      {/* <Events /> */}
+      <Schedule />
       <PrevWinners />
       <Prizes />
       {/* <Timeline/> */}

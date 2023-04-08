@@ -1,0 +1,95 @@
+.datesContainer {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+.datesContainer::before {
+	position: absolute;
+	left: 50%;
+	content: "";
+	width: 5px;
+	height: 100%;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+.entry {
+	margin: 50px 10px;
+	position: relative;
+}
+
+.indicator {
+	position: absolute;
+	top: -5px;
+	left: calc(50% - 5px);
+	width: 15px;
+	height: 15px;
+	background-color: #9d2b9c;
+	border-radius: 50%;
+}
+
+.indicator span {
+	position: relative;
+	top: -5px;
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+}
+
+.content {
+	width: 200px;
+	margin: 0 auto;
+	transform: translate(-58%, -9px);
+	font-size: 12px;
+	text-align: right;
+}
+
+.entry:nth-child(odd) .content {
+	text-align: left;
+	transform: translate(60%, -9px);
+}
+
+.content span {
+	font-weight: 500;
+	font-size: 20px;
+	display: block;
+	color: rgba(229, 224, 231, 0.961);
+}
+
+.time {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-130%, -48%);
+	font-size: 14px;
+	padding: 5px 10px;
+	border-radius: 25px;
+	background-color: #faf7fae9;
+	/* box-shadow: 0 3px 6px 0 rgba(250, 113, 49, 0.658); */
+	color: rgb(0, 0, 0);
+	display: inline-block;
+}
+
+.entry:nth-child(even) .time {
+	transform: translate(40%, -48%);
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		margin: 0;
+	}
+
+	.entry:nth-child(even) .content,
+	.entry:nth-child(odd) .content {
+		text-align: left;
+		transform: translate(60%, -9px);
+	}
+
+	.entry:nth-child(even) .time,
+	.entry:nth-child(odd) .time {
+		transform: translate(-130%, -48%);
+	}
+}
