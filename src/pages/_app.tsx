@@ -12,7 +12,7 @@ function Loading() {
     <>
       <div className="spinner-wrapper">
         {/* <div className="spinner" /> */}
-        <img src='./assets/images/gallery/hackfest_logo.gif' className='spinner'/>
+        <img src='../../public/logo.webp' className='spinner'/>
       </div>
     </>
   )

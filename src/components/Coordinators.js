@@ -37,96 +37,96 @@ export default class Coordinators extends React.Component {
           <Row>
             <Col md={6}>
               <Members
-                image="./assets/images/coordinators/adityasir.png"
-                name="Aditya Garg"
+                image="https://media.licdn.com/dms/image/D4D03AQHoFbR4uRKQtg/profile-displayphoto-shrink_800_800/0/1712898983374?e=1720656000&v=beta&t=jibI2t6dETNFbAGvQYN2tOajCVTFBRgHW-1gN6tR934"
+                name="Mudit Virmani"
                 post="Coordinator"
-                fb="https://www.instagram.com/aditya__kr__garg/"
-                linkedin="https://www.linkedin.com/in/garg-adi"
+                fb="#"
+                linkedin="#"
               />
             </Col>
             <Col md={6}>
               <Members
-                image="./assets/images/coordinators/anshumansir.png"
-                name="Anshuman Tejaswi"
-                post="Co-coordinator"
-                fb="https://www.instagram.com/swaggytejaswi/"
-                linkedin="https://www.linkedin.com/in/anshuman-tejaswi-790572199"
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6}>
-              <Members
-                image="./assets/images/coordinators/akshatSinghSir.png"
-                name="Akshat Singh"
-                post="Sponsorship Advisor"
-                fb="https://www.instagram.com/akshatic/"
-                linkedin="https://www.linkedin.com/in/akshatic"
-              />
-            </Col>
-            <Col md={6}>
-              <Members
-                image="./assets/images/coordinators/akashMahapatraSir.png"
-                name="Akash Mahapatra"
-                post="Operations Advisor"
-                fb="https://www.instagram.com/mahapatra_2002/"
-                linkedin="https://www.linkedin.com/in/mahapatraakash"
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6}>
-              <Members
-                image="./assets/images/coordinators/shirinMaam.png"
-                name="Shirin Kaul"
-                post="Content Advisor"
-                fb="https://www.instagram.com/s.h.i.r.i.n.k/"
-                linkedin="https://www.linkedin.com/in/shirin-kaul-b09282190"
-              />
-            </Col>
-            <Col md={6}>
-              <Members
-                image="./assets/images/coordinators/bhavyaJainSir.png"
-                name="Bhavya Jain"
-                post="Promotion and Marketing Advisor"
-                fb="https://www.instagram.com/bhavya_jain_2201/"
-                linkedin="https://www.linkedin.com/in/bhavya-jain-23200b157"
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6}>
-              <Members
-                image="./assets/images/coordinators/mishraSir.png"
-                name="Aditya Mishra"
+                image="https://media.licdn.com/dms/image/D4D03AQEdrLWzeTAXJw/profile-displayphoto-shrink_400_400/0/1713977551207?e=1720656000&v=beta&t=cz2sNjCB_mtayjdT5lPRHptDbx_B31MIn0NA8DnUSRs"
+                name="Suyash Suryavanshi"
                 post="Technical Advisor"
-                fb="https://www.instagram.com/spy.adi/"
-                linkedin="https://www.linkedin.com/in/aditya-mishra-a433a11b1"
+                fb="#"
+                linkedin="#"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6}>
+              <Members
+                image="https://media.licdn.com/dms/image/D5603AQGI_8LRMDsdAQ/profile-displayphoto-shrink_800_800/0/1699124659800?e=1720656000&v=beta&t=5CLSnLlK-UNBRhZ3NrhJDGHBwDT3GljDqfjffw5CW44"
+                name="Ayush Gupta"
+                post="Sponsorship Advisor"
+                fb="#"
+                linkedin="#"
               />
             </Col>
             <Col md={6}>
               <Members
-                image="./assets/images/coordinators/brajeshSir.png"
-                name="Brajesh Meena"
+                image="https://media.licdn.com/dms/image/D4D03AQEoMUo675vGFA/profile-displayphoto-shrink_800_800/0/1707252472654?e=1720656000&v=beta&t=5wRPMBnzY08PVQ92T2k1nDXvQfmj4r86PiTLCGSU-fs"
+                name="Surbhi Goel"
+                post="Public Relation Advisor"
+                fb="#"
+                linkedin="#"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6}>
+              <Members
+                image="https://media.licdn.com/dms/image/D5603AQGx-SUl5KMCyg/profile-displayphoto-shrink_800_800/0/1683295819334?e=1720656000&v=beta&t=uGqwyK0fb-vp2u9mfSemIq1GfkZLDy2StT-ELXInCZM"
+                name="Aneesha Das"
+                post="Content Advisor"
+                fb="#"
+                linkedin="#"
+              />
+            </Col>
+            <Col md={6}>
+              <Members
+                image=""
+                name="Prashant Rajveer"
                 post="Promotion and Marketing Advisor"
                 fb="#"
-                linkedin="https://www.linkedin.com/in/brajesh-meena-3529a8193"
+                linkedin="#"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6}>
+              <Members
+                image=""
+                name="Shiwangi Anand"
+                post="Design Advisor"
+                fb="#"
+                linkedin="#"
               />
             </Col>
             <Col md={6}>
               <Members
-                image="./assets/images/coordinators/shulabhSir.png"
-                name="Shulabh Prakash"
-                post="Graphics and Animation Advisor"
-                fb="https://www.instagram.com/shulabh_prakash/"
-                linkedin="https://www.linkedin.com/in/shulabh-prakash"
+                image=""
+                name="Aakash Bhat"
+                post="Promotion and Marketing Advisor"
+                fb="#"
+                linkedin="#"
+              />
+            </Col>
+            <Col md={6}>
+              <Members
+                image=""
+                name="Harshit Sharma"
+                post="Treasurer Advisor"
+                fb="#"
+                linkedin="#"
               />
             </Col>
           </Row>
           <Row>
             <Col md={12}>
               <Link href="/team" legacyBehavior>
-                <a className="team-btn-anchor">
+                <a className="team-btn-anchor" style={{ textDecoration: 'none' }}>
                   <button className="team-btn">Team</button>
                 </a>
               </Link>

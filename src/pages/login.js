@@ -6,6 +6,8 @@ import styles from "../styles/Login.module.css";
 
 
 const Login = () => {
+  const [loading, setLoading] = useState(false);
+  
   // const navigate = useNavigate();
   const router = useRouter();
   const { setCurrentUser } = useContext(UserContext);
@@ -25,33 +27,21 @@ const Login = () => {
     setData({ ...data, [name]: value });
   };
   const formSubmit = async () => {
-    // console.log(data);
-
     setData({ ...data });
+    setLoading(true);
     try {
       const res = await axios.post(REACT_APP_BACKEND_URL, data);
       alert(res.data.message);
-      // console.log(res.data.data);
       setCurrentUser(res.data.data);
-      // console.log(res);
       localStorage.setItem("Dammta", JSON.stringify(res.data.data));
-      // console.log(JSON.parse(localStorage.getItem("data")));
       setTimeout(() => {
         router.push("/profile");
+        setLoading(false); 
       }, 1000);
     } catch (err) {
       alert(err);
+      setLoading(false); 
     }
-
-    // if (res.status == "200") {
-    //   alert("You have successfully registered!");
-    // } else {
-    // }
-    // try {
-    //   const { dat } = await axios.post(REACT_APP_BACKEND_URL, data);
-    // } catch (error) {
-    //   console.log(error);
-    // }
   };
   return (
     <>
@@ -101,13 +91,14 @@ const Login = () => {
             className={styles.button}
             type="submit"
             onClick={(e) => {
-              console.log("hi");
+              console.log("Checking credentials...");
               e.preventDefault();
               formSubmit();
             }}
           >
             Submit
           </button>
+          {loading && <div className={styles.loader}>Loading...</div>}
         </form>
       </div>
     </>

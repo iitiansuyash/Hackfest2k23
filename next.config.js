@@ -10,7 +10,12 @@ const nextConfig = {
     return config
   },
   images: {
-    domains: ['mongodb.com', 'res.cloudinary.com', 'i.imgur.com'],
+    domains: [
+      'mongodb.com',
+      'res.cloudinary.com',
+      'i.imgur.com',
+      'drive.google.com',
+    ],
   },
 }
 

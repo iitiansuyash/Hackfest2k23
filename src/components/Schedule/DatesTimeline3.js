@@ -70,7 +70,7 @@ const DatesTimeline3 = () => {
                     <p class={styles.content}>
                         <span>HackFest Inauguration</span>
                     </p>
-                    <div class={styles.time}>7 April, 2023   7:00PM IST</div>
+                    <div class={styles.time}>10 May, 2024   6:00PM IST</div>
                 </div>
                 <div class={styles.entry}>
                     <div class={styles.indicator}>
@@ -79,7 +79,7 @@ const DatesTimeline3 = () => {
                     <p class={styles.content}>
                         <span>Problem Statement Releases</span>
                     </p>
-                    <div class={styles.time}>7 April, 2023  10:00PM IST</div>
+                    <div class={styles.time}>10 May, 2024  11:59PM IST</div>
                 </div>
                 <div class={styles.entry}>
                     <div class={styles.indicator}>
@@ -88,7 +88,7 @@ const DatesTimeline3 = () => {
                     <p class={styles.content}>
                         <span>Hack Begnis!</span>
                     </p>
-                    <div class={styles.time}>7 April, 2023  11:59PM IST</div>
+                    <div class={styles.time}>10 May, 2024  11:59PM IST</div>
                 </div>
                 {/* <div class={styles.entry}>
                     <div class={styles.indicator}>
@@ -107,9 +107,9 @@ const DatesTimeline3 = () => {
                     <p class={styles.content}>
                         <span>1st Evaluation</span>
                     </p>
-                    <div class={styles.time}>8 April, 2023 11:59AM IST</div>
+                    <div class={styles.time}>11 May, 2024 12:00PM IST</div>
                 </div>
-                <div class={styles.entry}>
+                {/* <div class={styles.entry}>
                     <div class={styles.indicator}>
                         <span></span>
                     </div>
@@ -118,7 +118,7 @@ const DatesTimeline3 = () => {
                         Interaction with Arsh Goyal
                     </p>
                     <div class={styles.time}>8 April, 2023 7:00PM IST</div>
-                </div>
+                </div> */}
                 {/* <div class={styles.entry}>
                     <div class={styles.indicator}>
                         <span></span>
@@ -176,7 +176,7 @@ const DatesTimeline3 = () => {
                     <p class={styles.content}>
                         <span>2nd Evaluation</span>
                     </p>
-                    <div class={styles.time}>8 April, 2023 11:00PM IST</div>
+                    <div class={styles.time}>12 May, 2024 12:00PM IST</div>
                 </div>
                 {/* <div class={styles.entry}>
                     <div class={styles.indicator}>
@@ -195,9 +195,9 @@ const DatesTimeline3 = () => {
                     <p class={styles.content}>
                         <span>Hackathon Ends</span>
                     </p>
-                    <div class={styles.time}>9 April, 2023 11:59AM IST</div>
+                    <div class={styles.time}>12 May, 2024 12:00PM IST</div>
                 </div>
-                <div class={styles.entry}>
+                {/* <div class={styles.entry}>
                     <div class={styles.indicator}>
                         <span></span>
                     </div>
@@ -206,7 +206,7 @@ const DatesTimeline3 = () => {
                         Comedy show after tedious 36hrs
                     </p>
                     <div class={styles.time}>9 April, 2023 8:30PM IST</div>
-                </div>
+                </div> */}
                 <div class={styles.entry}>
                     <div class={styles.indicator}>
                         <span></span>
@@ -214,7 +214,7 @@ const DatesTimeline3 = () => {
                     <p class={styles.content}>
                         <span>Result Announcement</span>
                     </p>
-                    <div class={styles.time}>9 April, 2023, 10:00PM IST</div>
+                    <div class={styles.time}>12 May, 2024, 5:00PM IST</div>
                 </div>
             </div>
         </div>

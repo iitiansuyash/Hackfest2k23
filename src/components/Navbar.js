@@ -27,8 +27,9 @@ const Navbar = (prop) => {
       <section className={styles.navbar}>
         <div className="nav">
           <input type="checkbox" id="nav-check" />
+          {/* <img src="../favicon.ico" alt="Logo" className={styles.navbarLogo}  /> */}
           <Link href="/" passHref={true} legacyBehavior={true}>
-            <div className="nav-header">
+            <div className="nav-header" style={{cursor: "pointer"}}>
               <div className="nav-title">Hackfest | IIT Dhanbad</div>
             </div>
           </Link>
@@ -66,7 +67,7 @@ const Navbar = (prop) => {
             >
               <a target="_blank">LinkedIn</a>
             </Link>
-            <div style={{color:"white"}}className='mydiv' onClick={()=>{
+            <div style={{color:"white", cursor: "pointer"}}className='mydiv' onClick={()=>{
               if(localStorage['Dammta']){
                 localStorage.setItem('Dammta',"");
                 setTimeout(() => {
