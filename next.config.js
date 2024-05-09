@@ -15,6 +15,8 @@ const nextConfig = {
       'res.cloudinary.com',
       'i.imgur.com',
       'drive.google.com',
+      'media.licdn.com',
+      '*',
     ],
   },
 }

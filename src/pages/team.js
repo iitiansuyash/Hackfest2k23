@@ -21,12 +21,28 @@ const Team = () => {
       <div className={styles.container}>
         <h1 className={styles.ttl}>Advisors</h1>
       </div>
-      <main id={styles.main}>
+      {/* <main id={styles.main}>
         {users.map((user, i) => {
-          if (user.type == 'advisor') {
+          if (user.type == 'Coordinator') {
             return <TeamCard user={user} key={i} />
           }
         })}
+      </main> */}
+      
+      {/* <main id={styles.main}>
+        {users.map((user, i) => {
+          if (user.type == 'Treasurer') {
+            return <TeamCard user={user} key={i} />
+          }
+        })}
+      </main> */}
+      <main id={styles.main}>
+      {users
+  .filter(user => user.type === 'Advisor') // Filter out users of type 'Advisor'
+  .sort((a, b) => a.id - b.id) // Sort the filtered array by user id
+  .map((user, i) => (
+    <TeamCard user={user} key={i} />
+  ))}
       </main>
       <div className={styles.container}>
         <h1 className={styles.ttl}>Team Leads</h1>

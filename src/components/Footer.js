@@ -18,13 +18,13 @@ const Footer = () => {
                     <figure className="logo-box mx-auto">
                       <a href="#">
                         <img
-                          src="./assets/images/sponsors/hfOfficialLogo.png"
+                          src="../logo.webp"
                           alt=""
                         />
                       </a>
                     </figure>
                     <div className="textFooter">
-                      <p>HACKFEST 2K23 | IIT (ISM) DHANBAD</p>
+                      <p>HACKFEST 2K24 | IIT (ISM) DHANBAD</p>
                     </div>
                     <ul className="footer-social ulist ">
                       <li>
@@ -60,9 +60,9 @@ const Footer = () => {
                   <div className="contact-widget footer-widget">
                     <div className="footer-title">Contact Us</div>
                     <div className="textFooter">
-                      <p>NVCTI, CRE Building, IIT (ISM), Dhanbad 826004</p>
+                      <p>Central Library, IIT (ISM) Dhanbad, Dhanbad, Jharkhand, 826004</p>
                       <p onclick="window.open('tel:9871842597);">
-                        +91 98718 42597
+                        +91 88249 17959
                       </p>
                       <p
                         onClick={(e) => {
