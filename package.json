@@ -29,7 +29,6 @@
     "react-dom": "18.2.0",
     "react-qr-code": "^2.0.11",
     "react-router-dom": "^6.9.0",
-    "react-smooth-scrolling": "^1.0.2",
     "reactstrap": "^9.1.6",
     "rodal": "^2.0.1",
     "three": "^0.150.1",
